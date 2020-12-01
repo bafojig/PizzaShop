@@ -18,6 +18,8 @@ namespace PizzaShop
             InitializeComponent();
         }
 
+        string user;
+
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -37,18 +39,17 @@ namespace PizzaShop
         {
             if (password.Text == confirmbox.Text)
             {
-                User u = new User
-                {
-                    username = username.Text,
-                    password = password.Text
-                };
 
-                if (File.Exists(AppContext.BaseDirectory + u.username + ".txt"))
+                if (File.Exists(AppContext.BaseDirectory + username.Text + ".txt"))
                 {
                     errorLabel.Text = "Username already taken.";
                 }
                 else
-                    u.saveInfo();
+                {
+                    Program.User.Username = username.Text;
+                    Program.User.Password = password.Text;
+                    Program.User.saveInfo();
+                }
 
                 Home h = new Home();
                 h.Show();

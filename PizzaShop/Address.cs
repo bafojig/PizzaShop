@@ -17,6 +17,9 @@ namespace PizzaShop
             InitializeComponent();
         }
 
+        string user;
+        Order order;
+
         private void CheckOut_Load(object sender, EventArgs e)
         {
 

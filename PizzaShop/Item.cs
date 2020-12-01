@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PizzaShop
 {
-    class Item
+    public class Item
     {
-        string name;
+        public string name;
         double price;
         
 

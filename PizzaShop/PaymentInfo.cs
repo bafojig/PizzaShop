@@ -1,6 +1,6 @@
 ﻿namespace PizzaShop
 {
-    class PaymentInfo
+    public class PaymentInfo
     {
         bool credit;
         string cardNum;

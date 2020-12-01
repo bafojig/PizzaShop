@@ -34,7 +34,8 @@ namespace PizzaShop
                         Home h = new Home();
                         Hide();
                         h.Show();
-                        h.user = un;
+                        Program.User.Username = un;
+                        Program.User.Password = pw;
                     }
                     
                 }

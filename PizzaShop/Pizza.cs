@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PizzaShop
 {
-    class Pizza : Item
+    public class Pizza : Item
     {
         string size;
         string[] toppings;

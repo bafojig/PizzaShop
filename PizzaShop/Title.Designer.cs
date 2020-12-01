@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.registerBtn = new System.Windows.Forms.Button();
             this.logBtn = new System.Windows.Forms.Button();
+            this.registerBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.titlePanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.titlePanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // registerBtn
-            // 
-            this.registerBtn.Location = new System.Drawing.Point(323, 267);
-            this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(75, 23);
-            this.registerBtn.TabIndex = 0;
-            this.registerBtn.Text = "Register";
-            this.registerBtn.UseVisualStyleBackColor = true;
-            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click_1);
             // 
             // logBtn
             // 
@@ -55,6 +45,16 @@
             this.logBtn.Text = "Log In";
             this.logBtn.UseVisualStyleBackColor = true;
             this.logBtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // registerBtn
+            // 
+            this.registerBtn.Location = new System.Drawing.Point(323, 267);
+            this.registerBtn.Name = "registerBtn";
+            this.registerBtn.Size = new System.Drawing.Size(75, 23);
+            this.registerBtn.TabIndex = 0;
+            this.registerBtn.Text = "Register";
+            this.registerBtn.UseVisualStyleBackColor = true;
+            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click_1);
             // 
             // pictureBox1
             // 
@@ -91,8 +91,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button registerBtn;
         private System.Windows.Forms.Button logBtn;
+        private System.Windows.Forms.Button registerBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel titlePanel;
     }

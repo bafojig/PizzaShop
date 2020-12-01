@@ -89,6 +89,9 @@
     <Compile Include="Order.cs" />
     <Compile Include="PaymentInfo.cs" />
     <Compile Include="Pizza.cs" />
+    <Compile Include="testDataSet.cs">
+      <DependentUpon>testDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="testDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

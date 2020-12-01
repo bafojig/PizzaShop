@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace PizzaShop
 {
-    class Order
+    public class Order
     {
         int OrderNum;
         string date;
         Item[] items;
         double subtotal;
         double delFee;
-        User user;
+        public User user;
         string signature;
 
 

@@ -12,11 +12,13 @@ namespace PizzaShop
 {
     public partial class Home : Form
     {
+
+        
+
         public Home()
         {
-            InitializeComponent();
+
         }
-        public string user;
 
         private void homePanel_Paint(object sender, PaintEventArgs e)
         {

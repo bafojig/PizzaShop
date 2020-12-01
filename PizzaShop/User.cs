@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PizzaShop
 {
-    class User
+    public class User
     {
         public string username;
         public string password;
