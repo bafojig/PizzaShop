@@ -15,29 +15,27 @@ namespace PizzaShop
         public PaymentInfo pi;
         public bool admin;
 
-        public void editInfo()
-        {
-            
-        }
-
         public void saveInfo()
         {
             using (StreamWriter sw = File.CreateText(AppContext.BaseDirectory + username + ".txt"))
             {
                 sw.WriteLine(username);
                 sw.WriteLine(password);
-                sw.WriteLine(address);
+                sw.WriteLine(address.ToString());
                 sw.WriteLine(pi);
-                if (admin)
-                    sw.WriteLine("Admin");
-                else
-                    sw.WriteLine("Not Admin");
+                sw.WriteLine(admin);
             }
+        }
+
+        public void loadInfo()
+        {
+            
         }
         public void dailyReport(string d)
         {
 
         }
+   
 
     }
 }

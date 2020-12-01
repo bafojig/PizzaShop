@@ -49,9 +49,13 @@ namespace PizzaShop
                 }
                 else
                     u.saveInfo();
-                    
-                
+
+                Home h = new Home();
+                h.Show();
+                Hide();
             }
+            else
+                errorLabel.Text = "Passwords don't match";
         }
     }
 }
