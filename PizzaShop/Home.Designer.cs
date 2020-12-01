@@ -51,6 +51,7 @@
             this.pizzab.TabIndex = 9;
             this.pizzab.Text = "Order Pizza";
             this.pizzab.UseVisualStyleBackColor = true;
+            this.pizzab.Click += new System.EventHandler(this.pizzab_Click);
             // 
             // drinkb
             // 
@@ -60,6 +61,7 @@
             this.drinkb.TabIndex = 10;
             this.drinkb.Text = "Order Drinks";
             this.drinkb.UseVisualStyleBackColor = true;
+            this.drinkb.Click += new System.EventHandler(this.drinkb_Click);
             // 
             // pictureBox1
             // 
@@ -85,6 +87,7 @@
             this.cartb.TabIndex = 13;
             this.cartb.Text = "Cart";
             this.cartb.UseVisualStyleBackColor = true;
+            this.cartb.Click += new System.EventHandler(this.cartb_Click);
             // 
             // logoutb
             // 
@@ -94,6 +97,7 @@
             this.logoutb.TabIndex = 14;
             this.logoutb.Text = "Logout";
             this.logoutb.UseVisualStyleBackColor = true;
+            this.logoutb.Click += new System.EventHandler(this.logoutb_Click);
             // 
             // pictureBox3
             // 
@@ -111,6 +115,7 @@
             this.editb.TabIndex = 16;
             this.editb.Text = "Edit Account";
             this.editb.UseVisualStyleBackColor = true;
+            this.editb.Click += new System.EventHandler(this.editb_Click);
             // 
             // homePanel
             // 
@@ -126,6 +131,7 @@
             this.homePanel.Name = "homePanel";
             this.homePanel.Size = new System.Drawing.Size(750, 426);
             this.homePanel.TabIndex = 9;
+            this.homePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.homePanel_Paint);
             // 
             // Home
             // 

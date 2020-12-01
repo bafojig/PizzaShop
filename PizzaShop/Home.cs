@@ -16,5 +16,36 @@ namespace PizzaShop
         {
             InitializeComponent();
         }
+        public string user;
+
+        private void homePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pizzab_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void drinkb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cartb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logoutb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editb_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -18,6 +18,8 @@ namespace PizzaShop
             InitializeComponent();
         }
 
+        string user;
+
         private void lbutton_Click(object sender, EventArgs e)
         {
             if (File.Exists(AppContext.BaseDirectory + username.Text + ".txt"))
@@ -32,8 +34,9 @@ namespace PizzaShop
                         Home h = new Home();
                         Hide();
                         h.Show();
+                        h.user = un;
                     }
-                        
+                    
                 }
 
             }
