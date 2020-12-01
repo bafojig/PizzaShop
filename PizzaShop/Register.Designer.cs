@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.registerPanel = new System.Windows.Forms.Panel();
+            this.errorLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.registerPanel.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +50,7 @@
             this.rbutton.TabIndex = 10;
             this.rbutton.Text = "Login";
             this.rbutton.UseVisualStyleBackColor = true;
+            this.rbutton.Click += new System.EventHandler(this.rbutton_Click);
             // 
             // password
             // 
@@ -110,6 +112,7 @@
             // 
             // registerPanel
             // 
+            this.registerPanel.Controls.Add(this.errorLabel);
             this.registerPanel.Controls.Add(this.pictureBox1);
             this.registerPanel.Controls.Add(this.label1);
             this.registerPanel.Controls.Add(this.confirmbox);
@@ -122,6 +125,14 @@
             this.registerPanel.Name = "registerPanel";
             this.registerPanel.Size = new System.Drawing.Size(724, 397);
             this.registerPanel.TabIndex = 14;
+            // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Location = new System.Drawing.Point(318, 159);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(0, 13);
+            this.errorLabel.TabIndex = 14;
             // 
             // Register
             // 
@@ -150,5 +161,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel registerPanel;
+        private System.Windows.Forms.Label errorLabel;
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.registerBtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.logBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.titlePanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -46,14 +46,15 @@
             this.registerBtn.UseVisualStyleBackColor = true;
             this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click_1);
             // 
-            // button2
+            // logBtn
             // 
-            this.button2.Location = new System.Drawing.Point(323, 316);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Log In";
-            this.button2.UseVisualStyleBackColor = true;
+            this.logBtn.Location = new System.Drawing.Point(323, 316);
+            this.logBtn.Name = "logBtn";
+            this.logBtn.Size = new System.Drawing.Size(75, 23);
+            this.logBtn.TabIndex = 1;
+            this.logBtn.Text = "Log In";
+            this.logBtn.UseVisualStyleBackColor = true;
+            this.logBtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
@@ -67,7 +68,7 @@
             // 
             this.titlePanel.Controls.Add(this.pictureBox1);
             this.titlePanel.Controls.Add(this.registerBtn);
-            this.titlePanel.Controls.Add(this.button2);
+            this.titlePanel.Controls.Add(this.logBtn);
             this.titlePanel.Location = new System.Drawing.Point(23, 12);
             this.titlePanel.Name = "titlePanel";
             this.titlePanel.Size = new System.Drawing.Size(744, 426);
@@ -91,7 +92,7 @@
         #endregion
 
         private System.Windows.Forms.Button registerBtn;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button logBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel titlePanel;
     }

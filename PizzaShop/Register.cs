@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PizzaShop
 {
@@ -30,6 +31,27 @@ namespace PizzaShop
         private void Register_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void rbutton_Click(object sender, EventArgs e)
+        {
+            if (password.Text == confirmbox.Text)
+            {
+                User u = new User
+                {
+                    username = username.Text,
+                    password = password.Text
+                };
+
+                if (File.Exists(AppContext.BaseDirectory + u.username + ".txt"))
+                {
+                    errorLabel.Text = "Username already taken.";
+                }
+                else
+                    u.saveInfo();
+                    
+                
+            }
         }
     }
 }

@@ -33,7 +33,9 @@
             this.cartb = new System.Windows.Forms.Button();
             this.homeb = new System.Windows.Forms.Button();
             this.receiptPanel = new System.Windows.Forms.Panel();
+            this.dataSet1 = new System.Data.DataSet();
             this.receiptPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -83,6 +85,10 @@
             this.receiptPanel.TabIndex = 18;
             this.receiptPanel.Visible = false;
             // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "NewDataSet";
+            // 
             // Receipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,6 +98,7 @@
             this.Name = "Receipt";
             this.Text = "Receipt";
             this.receiptPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -103,5 +110,6 @@
         private System.Windows.Forms.Button cartb;
         private System.Windows.Forms.Button homeb;
         private System.Windows.Forms.Panel receiptPanel;
+        private System.Data.DataSet dataSet1;
     }
 }

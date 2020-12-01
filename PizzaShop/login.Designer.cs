@@ -60,6 +60,7 @@
             this.lbutton.TabIndex = 11;
             this.lbutton.Text = "Login";
             this.lbutton.UseVisualStyleBackColor = true;
+            this.lbutton.Click += new System.EventHandler(this.lbutton_Click);
             // 
             // pictureBox1
             // 

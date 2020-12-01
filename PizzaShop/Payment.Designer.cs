@@ -28,28 +28,191 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.payPanel = new System.Windows.Forms.Panel();
-            this.yearBox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.placeOrderButton = new System.Windows.Forms.Button();
-            this.logoutb = new System.Windows.Forms.Button();
-            this.cartb = new System.Windows.Forms.Button();
-            this.homeb = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.monthBox = new System.Windows.Forms.TextBox();
-            this.ccBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkButton = new System.Windows.Forms.RadioButton();
-            this.ccButton = new System.Windows.Forms.RadioButton();
             this.codButton = new System.Windows.Forms.RadioButton();
-            this.payPanel.SuspendLayout();
+            this.ccButton = new System.Windows.Forms.RadioButton();
+            this.checkButton = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ccBox = new System.Windows.Forms.TextBox();
+            this.monthBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.homeb = new System.Windows.Forms.Button();
+            this.cartb = new System.Windows.Forms.Button();
+            this.logoutb = new System.Windows.Forms.Button();
+            this.placeOrderButton = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.yearBox = new System.Windows.Forms.TextBox();
+            this.payPanel = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
+            this.payPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkButton);
+            this.groupBox1.Controls.Add(this.ccButton);
+            this.groupBox1.Controls.Add(this.codButton);
+            this.groupBox1.Location = new System.Drawing.Point(40, 44);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Payment Method";
+            // 
+            // codButton
+            // 
+            this.codButton.AutoSize = true;
+            this.codButton.Location = new System.Drawing.Point(19, 20);
+            this.codButton.Name = "codButton";
+            this.codButton.Size = new System.Drawing.Size(105, 17);
+            this.codButton.TabIndex = 0;
+            this.codButton.TabStop = true;
+            this.codButton.Text = "Cash on Delivery";
+            this.codButton.UseVisualStyleBackColor = true;
+            // 
+            // ccButton
+            // 
+            this.ccButton.AutoSize = true;
+            this.ccButton.Location = new System.Drawing.Point(19, 44);
+            this.ccButton.Name = "ccButton";
+            this.ccButton.Size = new System.Drawing.Size(160, 17);
+            this.ccButton.TabIndex = 1;
+            this.ccButton.TabStop = true;
+            this.ccButton.Text = "Pay Now with Credit or Debit";
+            this.ccButton.UseVisualStyleBackColor = true;
+            // 
+            // checkButton
+            // 
+            this.checkButton.AutoSize = true;
+            this.checkButton.Location = new System.Drawing.Point(19, 68);
+            this.checkButton.Name = "checkButton";
+            this.checkButton.Size = new System.Drawing.Size(99, 17);
+            this.checkButton.TabIndex = 2;
+            this.checkButton.TabStop = true;
+            this.checkButton.Text = "Pay with Check";
+            this.checkButton.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(56, 238);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Card Number";
+            // 
+            // ccBox
+            // 
+            this.ccBox.Location = new System.Drawing.Point(58, 254);
+            this.ccBox.Name = "ccBox";
+            this.ccBox.Size = new System.Drawing.Size(182, 20);
+            this.ccBox.TabIndex = 20;
+            // 
+            // monthBox
+            // 
+            this.monthBox.Location = new System.Drawing.Point(59, 310);
+            this.monthBox.Name = "monthBox";
+            this.monthBox.Size = new System.Drawing.Size(45, 20);
+            this.monthBox.TabIndex = 21;
+            this.monthBox.Text = "MM";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(59, 291);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Expiration Date";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(59, 346);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 13);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Billing Zip Code";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(59, 363);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 24;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(276, 291);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 13);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Security Code";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(279, 310);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 26;
+            // 
+            // homeb
+            // 
+            this.homeb.Location = new System.Drawing.Point(500, 44);
+            this.homeb.Name = "homeb";
+            this.homeb.Size = new System.Drawing.Size(75, 23);
+            this.homeb.TabIndex = 27;
+            this.homeb.Text = "Home";
+            this.homeb.UseVisualStyleBackColor = true;
+            // 
+            // cartb
+            // 
+            this.cartb.Location = new System.Drawing.Point(581, 44);
+            this.cartb.Name = "cartb";
+            this.cartb.Size = new System.Drawing.Size(75, 23);
+            this.cartb.TabIndex = 28;
+            this.cartb.Text = "Cart";
+            this.cartb.UseVisualStyleBackColor = true;
+            // 
+            // logoutb
+            // 
+            this.logoutb.Location = new System.Drawing.Point(662, 44);
+            this.logoutb.Name = "logoutb";
+            this.logoutb.Size = new System.Drawing.Size(75, 23);
+            this.logoutb.TabIndex = 29;
+            this.logoutb.Text = "Logout";
+            this.logoutb.UseVisualStyleBackColor = true;
+            // 
+            // placeOrderButton
+            // 
+            this.placeOrderButton.Location = new System.Drawing.Point(535, 309);
+            this.placeOrderButton.Name = "placeOrderButton";
+            this.placeOrderButton.Size = new System.Drawing.Size(190, 73);
+            this.placeOrderButton.TabIndex = 30;
+            this.placeOrderButton.Text = "Place Order";
+            this.placeOrderButton.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(110, 313);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(12, 13);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "/";
+            // 
+            // yearBox
+            // 
+            this.yearBox.Location = new System.Drawing.Point(128, 309);
+            this.yearBox.Name = "yearBox";
+            this.yearBox.Size = new System.Drawing.Size(45, 20);
+            this.yearBox.TabIndex = 32;
+            this.yearBox.Text = "YY";
             // 
             // payPanel
             // 
@@ -73,169 +236,6 @@
             this.payPanel.Size = new System.Drawing.Size(776, 426);
             this.payPanel.TabIndex = 18;
             // 
-            // yearBox
-            // 
-            this.yearBox.Location = new System.Drawing.Point(128, 309);
-            this.yearBox.Name = "yearBox";
-            this.yearBox.Size = new System.Drawing.Size(45, 20);
-            this.yearBox.TabIndex = 32;
-            this.yearBox.Text = "YY";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(110, 313);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(12, 13);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "/";
-            // 
-            // placeOrderButton
-            // 
-            this.placeOrderButton.Location = new System.Drawing.Point(535, 309);
-            this.placeOrderButton.Name = "placeOrderButton";
-            this.placeOrderButton.Size = new System.Drawing.Size(190, 73);
-            this.placeOrderButton.TabIndex = 30;
-            this.placeOrderButton.Text = "Place Order";
-            this.placeOrderButton.UseVisualStyleBackColor = true;
-            // 
-            // logoutb
-            // 
-            this.logoutb.Location = new System.Drawing.Point(662, 44);
-            this.logoutb.Name = "logoutb";
-            this.logoutb.Size = new System.Drawing.Size(75, 23);
-            this.logoutb.TabIndex = 29;
-            this.logoutb.Text = "Logout";
-            this.logoutb.UseVisualStyleBackColor = true;
-            // 
-            // cartb
-            // 
-            this.cartb.Location = new System.Drawing.Point(581, 44);
-            this.cartb.Name = "cartb";
-            this.cartb.Size = new System.Drawing.Size(75, 23);
-            this.cartb.TabIndex = 28;
-            this.cartb.Text = "Cart";
-            this.cartb.UseVisualStyleBackColor = true;
-            // 
-            // homeb
-            // 
-            this.homeb.Location = new System.Drawing.Point(500, 44);
-            this.homeb.Name = "homeb";
-            this.homeb.Size = new System.Drawing.Size(75, 23);
-            this.homeb.TabIndex = 27;
-            this.homeb.Text = "Home";
-            this.homeb.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(279, 310);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 26;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(276, 291);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 13);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Security Code";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(59, 363);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 24;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 346);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 13);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Billing Zip Code";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 291);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Expiration Date";
-            // 
-            // monthBox
-            // 
-            this.monthBox.Location = new System.Drawing.Point(59, 310);
-            this.monthBox.Name = "monthBox";
-            this.monthBox.Size = new System.Drawing.Size(45, 20);
-            this.monthBox.TabIndex = 21;
-            this.monthBox.Text = "MM";
-            // 
-            // ccBox
-            // 
-            this.ccBox.Location = new System.Drawing.Point(58, 254);
-            this.ccBox.Name = "ccBox";
-            this.ccBox.Size = new System.Drawing.Size(182, 20);
-            this.ccBox.TabIndex = 20;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 238);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 13);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Card Number";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkButton);
-            this.groupBox1.Controls.Add(this.ccButton);
-            this.groupBox1.Controls.Add(this.codButton);
-            this.groupBox1.Location = new System.Drawing.Point(40, 44);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 18;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Payment Method";
-            // 
-            // checkButton
-            // 
-            this.checkButton.AutoSize = true;
-            this.checkButton.Location = new System.Drawing.Point(19, 68);
-            this.checkButton.Name = "checkButton";
-            this.checkButton.Size = new System.Drawing.Size(99, 17);
-            this.checkButton.TabIndex = 2;
-            this.checkButton.TabStop = true;
-            this.checkButton.Text = "Pay with Check";
-            this.checkButton.UseVisualStyleBackColor = true;
-            // 
-            // ccButton
-            // 
-            this.ccButton.AutoSize = true;
-            this.ccButton.Location = new System.Drawing.Point(19, 44);
-            this.ccButton.Name = "ccButton";
-            this.ccButton.Size = new System.Drawing.Size(160, 17);
-            this.ccButton.TabIndex = 1;
-            this.ccButton.TabStop = true;
-            this.ccButton.Text = "Pay Now with Credit or Debit";
-            this.ccButton.UseVisualStyleBackColor = true;
-            // 
-            // codButton
-            // 
-            this.codButton.AutoSize = true;
-            this.codButton.Location = new System.Drawing.Point(19, 20);
-            this.codButton.Name = "codButton";
-            this.codButton.Size = new System.Drawing.Size(105, 17);
-            this.codButton.TabIndex = 0;
-            this.codButton.TabStop = true;
-            this.codButton.Text = "Cash on Delivery";
-            this.codButton.UseVisualStyleBackColor = true;
-            // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,34 +244,34 @@
             this.Controls.Add(this.payPanel);
             this.Name = "Payment";
             this.Text = "Payment";
-            this.payPanel.ResumeLayout(false);
-            this.payPanel.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.payPanel.ResumeLayout(false);
+            this.payPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel payPanel;
-        private System.Windows.Forms.TextBox yearBox;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button placeOrderButton;
-        private System.Windows.Forms.Button logoutb;
-        private System.Windows.Forms.Button cartb;
-        private System.Windows.Forms.Button homeb;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox monthBox;
-        private System.Windows.Forms.TextBox ccBox;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton checkButton;
         private System.Windows.Forms.RadioButton ccButton;
         private System.Windows.Forms.RadioButton codButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox ccBox;
+        private System.Windows.Forms.TextBox monthBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button homeb;
+        private System.Windows.Forms.Button cartb;
+        private System.Windows.Forms.Button logoutb;
+        private System.Windows.Forms.Button placeOrderButton;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox yearBox;
+        private System.Windows.Forms.Panel payPanel;
     }
 }

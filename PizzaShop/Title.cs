@@ -17,6 +17,8 @@ namespace PizzaShop
             InitializeComponent();
         }
 
+        
+
         private void registerBtn_Click(object sender, EventArgs e)
         {
             Hide();
@@ -32,10 +34,19 @@ namespace PizzaShop
 
         private void registerBtn_Click_1(object sender, EventArgs e)
         {
-            //Hide();
+            Hide();
             Register r = new Register();
             r.Show();
             Console.Write("blah");
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Login r = new Login();
+            r.Show();
+            
         }
     }
 }

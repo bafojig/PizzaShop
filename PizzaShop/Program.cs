@@ -17,6 +17,7 @@ namespace PizzaShop
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Title());
+            
         }
     }
 }
