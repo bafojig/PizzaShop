@@ -77,6 +77,7 @@
             this.backbutton.TabIndex = 9;
             this.backbutton.Text = "Go Back";
             this.backbutton.UseVisualStyleBackColor = true;
+            this.backbutton.Click += new System.EventHandler(this.backbutton_Click);
             // 
             // addCart
             // 
@@ -86,6 +87,7 @@
             this.addCart.TabIndex = 8;
             this.addCart.Text = "Add to Cart";
             this.addCart.UseVisualStyleBackColor = true;
+            this.addCart.Click += new System.EventHandler(this.addCart_Click);
             // 
             // vegBox
             // 

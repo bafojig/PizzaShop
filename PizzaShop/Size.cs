@@ -15,8 +15,57 @@ namespace PizzaShop
         public Size()
         {
             InitializeComponent();
+            
         }
 
+        public Pizza p;
 
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Home h = new Home();
+            h.Show();
+         
+        }
+
+        private void nextBtn_Click(object sender, EventArgs e)
+        {
+            
+            bool anythingselected = false;
+            foreach (RadioButton rd in Cheesebox.Controls.OfType<RadioButton>())
+            {
+                if (rd.Checked)
+                {
+                    anythingselected = true;
+                    p.cheese = rd.Text;
+                }
+            }
+            foreach (RadioButton rd in Crustbox.Controls.OfType<RadioButton>())
+            {
+                if (rd.Checked)
+                {
+                    anythingselected = true;
+                    p.crust = rd.Text;
+                }
+            }
+            foreach (RadioButton rd in Sizebox.Controls.OfType<RadioButton>())
+            {
+                if (rd.Checked)
+                {
+                    anythingselected = true;
+                    p.size = rd.Text;
+                }
+            }
+
+            if (anythingselected)
+            {
+                Hide();
+                Toppings t = new Toppings();
+                t.Show();
+                t.p = p;
+            }
+
+
+        }
     }
 }

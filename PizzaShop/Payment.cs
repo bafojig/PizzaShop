@@ -17,30 +17,26 @@ namespace PizzaShop
             InitializeComponent();
         }
 
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
+        //put order total in totalBox
 
         private void homeb_Click(object sender, EventArgs e)
         {
-
+            //go back home
         }
 
         private void cartb_Click(object sender, EventArgs e)
         {
-
+            //go back to cart
         }
 
         private void logoutb_Click(object sender, EventArgs e)
         {
-
+            //exit program
         }
 
         private void placeOrderButton_Click(object sender, EventArgs e)
         {
-
+            //place the order and show receipt, pass payment info to user
         }
     }
 }

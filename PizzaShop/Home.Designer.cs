@@ -85,7 +85,6 @@
             this.cartb.TabIndex = 13;
             this.cartb.Text = "Cart";
             this.cartb.UseVisualStyleBackColor = true;
-
             // 
             // logoutb
             // 

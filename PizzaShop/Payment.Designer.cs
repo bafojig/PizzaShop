@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.codButton = new System.Windows.Forms.RadioButton();
-            this.ccButton = new System.Windows.Forms.RadioButton();
             this.checkButton = new System.Windows.Forms.RadioButton();
+            this.ccButton = new System.Windows.Forms.RadioButton();
+            this.codButton = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.ccBox = new System.Windows.Forms.TextBox();
             this.monthBox = new System.Windows.Forms.TextBox();
@@ -47,6 +47,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.yearBox = new System.Windows.Forms.TextBox();
             this.payPanel = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.totalBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.payPanel.SuspendLayout();
             this.SuspendLayout();
@@ -63,16 +66,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Payment Method";
             // 
-            // codButton
+            // checkButton
             // 
-            this.codButton.AutoSize = true;
-            this.codButton.Location = new System.Drawing.Point(19, 20);
-            this.codButton.Name = "codButton";
-            this.codButton.Size = new System.Drawing.Size(105, 17);
-            this.codButton.TabIndex = 0;
-            this.codButton.TabStop = true;
-            this.codButton.Text = "Cash on Delivery";
-            this.codButton.UseVisualStyleBackColor = true;
+            this.checkButton.AutoSize = true;
+            this.checkButton.Location = new System.Drawing.Point(19, 68);
+            this.checkButton.Name = "checkButton";
+            this.checkButton.Size = new System.Drawing.Size(99, 17);
+            this.checkButton.TabIndex = 2;
+            this.checkButton.TabStop = true;
+            this.checkButton.Text = "Pay with Check";
+            this.checkButton.UseVisualStyleBackColor = true;
             // 
             // ccButton
             // 
@@ -85,16 +88,16 @@
             this.ccButton.Text = "Pay Now with Credit or Debit";
             this.ccButton.UseVisualStyleBackColor = true;
             // 
-            // checkButton
+            // codButton
             // 
-            this.checkButton.AutoSize = true;
-            this.checkButton.Location = new System.Drawing.Point(19, 68);
-            this.checkButton.Name = "checkButton";
-            this.checkButton.Size = new System.Drawing.Size(99, 17);
-            this.checkButton.TabIndex = 2;
-            this.checkButton.TabStop = true;
-            this.checkButton.Text = "Pay with Check";
-            this.checkButton.UseVisualStyleBackColor = true;
+            this.codButton.AutoSize = true;
+            this.codButton.Location = new System.Drawing.Point(19, 20);
+            this.codButton.Name = "codButton";
+            this.codButton.Size = new System.Drawing.Size(105, 17);
+            this.codButton.TabIndex = 0;
+            this.codButton.TabStop = true;
+            this.codButton.Text = "Cash on Delivery";
+            this.codButton.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -220,6 +223,9 @@
             // 
             // payPanel
             // 
+            this.payPanel.Controls.Add(this.label6);
+            this.payPanel.Controls.Add(this.totalBox);
+            this.payPanel.Controls.Add(this.checkBox1);
             this.payPanel.Controls.Add(this.yearBox);
             this.payPanel.Controls.Add(this.label5);
             this.payPanel.Controls.Add(this.placeOrderButton);
@@ -239,6 +245,32 @@
             this.payPanel.Name = "payPanel";
             this.payPanel.Size = new System.Drawing.Size(776, 426);
             this.payPanel.TabIndex = 18;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(279, 363);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(120, 17);
+            this.checkBox1.TabIndex = 33;
+            this.checkBox1.Text = "Save payment info?";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // totalBox
+            // 
+            this.totalBox.Location = new System.Drawing.Point(535, 169);
+            this.totalBox.Name = "totalBox";
+            this.totalBox.Size = new System.Drawing.Size(165, 20);
+            this.totalBox.TabIndex = 34;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(540, 153);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(31, 13);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "Total";
             // 
             // Payment
             // 
@@ -277,5 +309,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox yearBox;
         private System.Windows.Forms.Panel payPanel;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox totalBox;
     }
 }

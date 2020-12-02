@@ -17,6 +17,23 @@ namespace PizzaShop
             InitializeComponent();
         }
 
+        //fill in rcptBox with info from the order.
+
+        private void homeb_Click(object sender, EventArgs e)
+        {
+            //go home 
+        }
+
+        private void cartb_Click(object sender, EventArgs e)
+        {
+            //go to cart
+        }
+
+        private void logoutb_Click(object sender, EventArgs e)
+        {
+            //exit program
+        }
+
 
     }
 }

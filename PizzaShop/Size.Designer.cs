@@ -42,6 +42,8 @@
             this.htb = new System.Windows.Forms.RadioButton();
             this.tcb = new System.Windows.Forms.RadioButton();
             this.nysb = new System.Windows.Forms.RadioButton();
+            this.nextBtn = new System.Windows.Forms.Button();
+            this.backBtn = new System.Windows.Forms.Button();
             this.sizePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Cheesebox.SuspendLayout();
@@ -51,6 +53,8 @@
             // 
             // sizePanel
             // 
+            this.sizePanel.Controls.Add(this.backBtn);
+            this.sizePanel.Controls.Add(this.nextBtn);
             this.sizePanel.Controls.Add(this.pictureBox1);
             this.sizePanel.Controls.Add(this.Cheesebox);
             this.sizePanel.Controls.Add(this.Sizebox);
@@ -203,13 +207,33 @@
             this.nysb.Text = "New York Style";
             this.nysb.UseVisualStyleBackColor = true;
             // 
-            // Pizza
+            // nextBtn
+            // 
+            this.nextBtn.Location = new System.Drawing.Point(657, 378);
+            this.nextBtn.Name = "nextBtn";
+            this.nextBtn.Size = new System.Drawing.Size(75, 23);
+            this.nextBtn.TabIndex = 16;
+            this.nextBtn.Text = "Toppings";
+            this.nextBtn.UseVisualStyleBackColor = true;
+            this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
+            // 
+            // backBtn
+            // 
+            this.backBtn.Location = new System.Drawing.Point(30, 378);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(75, 23);
+            this.backBtn.TabIndex = 17;
+            this.backBtn.Text = "Back";
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
+            // Size
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.sizePanel);
-            this.Name = "Pizza";
+            this.Name = "Size";
             this.Text = "Pizza";
             this.sizePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -239,5 +263,7 @@
         private System.Windows.Forms.RadioButton htb;
         private System.Windows.Forms.RadioButton tcb;
         private System.Windows.Forms.RadioButton nysb;
+        private System.Windows.Forms.Button backBtn;
+        private System.Windows.Forms.Button nextBtn;
     }
 }

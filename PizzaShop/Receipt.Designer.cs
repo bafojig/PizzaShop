@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rcptBox = new System.Windows.Forms.RichTextBox();
             this.logoutb = new System.Windows.Forms.Button();
             this.cartb = new System.Windows.Forms.Button();
             this.homeb = new System.Windows.Forms.Button();
@@ -38,13 +38,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // rcptBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(46, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(231, 276);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "Empty Cart";
+            this.rcptBox.Location = new System.Drawing.Point(46, 12);
+            this.rcptBox.Name = "rcptBox";
+            this.rcptBox.ReadOnly = true;
+            this.rcptBox.Size = new System.Drawing.Size(231, 276);
+            this.rcptBox.TabIndex = 3;
+            this.rcptBox.Text = "Empty Cart";
             // 
             // logoutb
             // 
@@ -54,6 +55,7 @@
             this.logoutb.TabIndex = 17;
             this.logoutb.Text = "Logout";
             this.logoutb.UseVisualStyleBackColor = true;
+            this.logoutb.Click += new System.EventHandler(this.logoutb_Click);
             // 
             // cartb
             // 
@@ -63,6 +65,7 @@
             this.cartb.TabIndex = 16;
             this.cartb.Text = "Cart";
             this.cartb.UseVisualStyleBackColor = true;
+            this.cartb.Click += new System.EventHandler(this.cartb_Click);
             // 
             // homeb
             // 
@@ -72,10 +75,11 @@
             this.homeb.TabIndex = 15;
             this.homeb.Text = "Home";
             this.homeb.UseVisualStyleBackColor = true;
+            this.homeb.Click += new System.EventHandler(this.homeb_Click);
             // 
             // receiptPanel
             // 
-            this.receiptPanel.Controls.Add(this.richTextBox1);
+            this.receiptPanel.Controls.Add(this.rcptBox);
             this.receiptPanel.Controls.Add(this.logoutb);
             this.receiptPanel.Controls.Add(this.homeb);
             this.receiptPanel.Controls.Add(this.cartb);
@@ -105,7 +109,7 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rcptBox;
         private System.Windows.Forms.Button logoutb;
         private System.Windows.Forms.Button cartb;
         private System.Windows.Forms.Button homeb;

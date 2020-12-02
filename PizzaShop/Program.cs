@@ -53,17 +53,18 @@ namespace PizzaShop
         {
             private static int OrderNum;
             private static string date;
-            private static Item[] items;
+            public static List<Item> items;
             private static double subtotal;
             private static double delFee;
             private static string signature;
 
             public static int OrderNum1 { get => OrderNum; set => OrderNum = value; }
             public static string Date { get => date; set => date = value; }
-            public static Item[] Items { get => items; set => items = value; }
+           
             public static double Subtotal { get => subtotal; set => subtotal = value; }
             public static double DelFee { get => delFee; set => delFee = value; }
             public static string Signature { get => signature; set => signature = value; }
+            
 
             public static void findTotal()
             {
@@ -74,6 +75,7 @@ namespace PizzaShop
             {
 
             }
+
 
         }
         [STAThread]

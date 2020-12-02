@@ -8,8 +8,9 @@ namespace PizzaShop
 {
     public class Pizza : Item
     {
-        string size;
-        string[] toppings;
-        string crust;
+        public string size;
+        public List<string> toppings;
+        public string crust;
+        public string cheese;
     }
 }

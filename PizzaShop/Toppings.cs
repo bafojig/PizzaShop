@@ -15,8 +15,39 @@ namespace PizzaShop
         public Toppings()
         {
             InitializeComponent();
+            string[] meats = { "Pepperoni", "Bacon", "Anchovies", "Ham" };
+            string[] veggies = { "Mushrooms", "Spinach", "Green Olives", "Pineapple" };
+
+            vegBox.Items.AddRange(veggies);
+            meatBox.Items.AddRange(meats);
         }
 
-        Order order;
+        public Pizza p;
+
+        private void addCart_Click(object sender, EventArgs e)
+        {
+            List<string> tops = new List<string>();
+            foreach (string s in meatBox.CheckedItems)
+            {
+                tops.Add(s);
+            }
+            foreach (string s in vegBox.CheckedItems)
+            {
+                tops.Add(s);
+            }
+
+            p.toppings = tops;
+            Program.Order.items.Add(p);
+            Hide();
+            Cart c = new Cart();
+            c.Show();
+        }
+
+        private void backbutton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Size s = new Size();
+            s.p = p;
+        }
     }
 }

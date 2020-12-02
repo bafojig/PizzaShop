@@ -37,6 +37,7 @@ namespace PizzaShop
                         Program.User.Username = un;
                         Program.User.Password = pw;
                     }
+                    sr.Close();
                     
                 }
 
