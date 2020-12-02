@@ -24,18 +24,17 @@ namespace PizzaShop
         private void backbutton_Click(object sender, EventArgs e)
         {
             Hide();
-            Size s = new Size();
-            s.p = p;
+            Home h = new Home();
         }
 
         private void addCart_Click(object sender, EventArgs e)
         {
-            List<string> drinks = new List<string>();
+            List<string> drinks = new List<string>(); 
+            Item i = new Item();
+            i.price = 2.00;
             foreach (string s in drinkBox.CheckedItems)
             {
-                Item i = new Item();
                 i.name = s;
-                i.price = 2.00;
                 Program.Order.items.Add(i);
             }
             Hide();
