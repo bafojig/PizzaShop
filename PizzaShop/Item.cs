@@ -9,12 +9,17 @@ namespace PizzaShop
     public class Item
     {
         public string name;
-        double price;
+        public double price;
         
 
         public static void AddToOrder(Order o)
         {
 
+        }
+
+        public Item()
+        {
+            
         }
     }
 }

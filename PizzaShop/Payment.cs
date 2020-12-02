@@ -36,7 +36,7 @@ namespace PizzaShop
 
         private void placeOrderButton_Click(object sender, EventArgs e)
         {
-            //place the order and show receipt, pass payment info to user
+            //place the order and show receipt, pass payment info to user to be saved
         }
     }
 }

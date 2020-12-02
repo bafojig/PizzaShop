@@ -17,6 +17,5 @@ namespace PizzaShop
             InitializeComponent();
         }
 
-        string user;
     }
 }
