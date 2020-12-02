@@ -46,34 +46,38 @@
             this.toppingsPanel.Controls.Add(this.addCart);
             this.toppingsPanel.Controls.Add(this.vegBox);
             this.toppingsPanel.Controls.Add(this.meatBox);
-            this.toppingsPanel.Location = new System.Drawing.Point(12, 12);
+            this.toppingsPanel.Location = new System.Drawing.Point(38, 34);
+            this.toppingsPanel.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.toppingsPanel.Name = "toppingsPanel";
-            this.toppingsPanel.Size = new System.Drawing.Size(776, 426);
+            this.toppingsPanel.Size = new System.Drawing.Size(2457, 1212);
             this.toppingsPanel.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(503, 37);
+            this.label2.Location = new System.Drawing.Point(1593, 105);
+            this.label2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(132, 37);
             this.label2.TabIndex = 11;
             this.label2.Text = "Veggies";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(231, 37);
+            this.label1.Location = new System.Drawing.Point(732, 105);
+            this.label1.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(103, 37);
             this.label1.TabIndex = 10;
             this.label1.Text = "Meats";
             // 
             // backbutton
             // 
-            this.backbutton.Location = new System.Drawing.Point(59, 212);
+            this.backbutton.Location = new System.Drawing.Point(187, 603);
+            this.backbutton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.backbutton.Name = "backbutton";
-            this.backbutton.Size = new System.Drawing.Size(75, 23);
+            this.backbutton.Size = new System.Drawing.Size(238, 65);
             this.backbutton.TabIndex = 9;
             this.backbutton.Text = "Go Back";
             this.backbutton.UseVisualStyleBackColor = true;
@@ -81,9 +85,10 @@
             // 
             // addCart
             // 
-            this.addCart.Location = new System.Drawing.Point(643, 212);
+            this.addCart.Location = new System.Drawing.Point(2036, 603);
+            this.addCart.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.addCart.Name = "addCart";
-            this.addCart.Size = new System.Drawing.Size(75, 23);
+            this.addCart.Size = new System.Drawing.Size(238, 65);
             this.addCart.TabIndex = 8;
             this.addCart.Text = "Add to Cart";
             this.addCart.UseVisualStyleBackColor = true;
@@ -92,25 +97,29 @@
             // vegBox
             // 
             this.vegBox.FormattingEnabled = true;
-            this.vegBox.Location = new System.Drawing.Point(459, 56);
+            this.vegBox.Location = new System.Drawing.Point(1454, 159);
+            this.vegBox.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.vegBox.Name = "vegBox";
-            this.vegBox.Size = new System.Drawing.Size(138, 334);
+            this.vegBox.Size = new System.Drawing.Size(428, 940);
             this.vegBox.TabIndex = 7;
             // 
             // meatBox
             // 
             this.meatBox.FormattingEnabled = true;
-            this.meatBox.Location = new System.Drawing.Point(192, 56);
+            this.meatBox.Location = new System.Drawing.Point(608, 159);
+            this.meatBox.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.meatBox.Name = "meatBox";
-            this.meatBox.Size = new System.Drawing.Size(138, 334);
+            this.meatBox.Size = new System.Drawing.Size(428, 940);
             this.meatBox.TabIndex = 6;
+            this.meatBox.SelectedIndexChanged += new System.EventHandler(this.meatBox_SelectedIndexChanged);
             // 
             // Toppings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(2533, 1281);
             this.Controls.Add(this.toppingsPanel);
+            this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Name = "Toppings";
             this.Text = "Pizza";
             this.toppingsPanel.ResumeLayout(false);
