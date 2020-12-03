@@ -15,8 +15,7 @@ namespace PizzaShop
         public Drinks()
         {
             InitializeComponent();
-            string[] drinks = { "Coke", "Coke Zero", "Sprite", "Dr. Pepper", "Diet Dr. Pepper" };
-            drinkBox.Items.AddRange(drinks);
+            
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -31,14 +30,22 @@ namespace PizzaShop
 
         private void addCart_Click(object sender, EventArgs e)
         {
-            List<string> drinks = new List<string>();
+
+            string name = drinkBox.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+            string size = SizeOptionGroup.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+            double price;
+            if (size == "Small")
+                price = 1.75;
+            else if (size == "Medium")
+                price = 2.00;
+            else price = 2.50;
+
             Item i = new Item();
-            i.price = 2.00;
-            foreach (string s in drinkBox.CheckedItems)
-            {
-                i.name = s;
-                Program.Order.items.Add(i);
-            }
+            i.name = name;
+            i.price = price;
+
+            Program.Order.items.Add(i);
+
             Hide();
             Cart c = new Cart();
             c.Show();
