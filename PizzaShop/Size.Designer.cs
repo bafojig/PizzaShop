@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.sizePanel = new System.Windows.Forms.Panel();
+            this.backBtn = new System.Windows.Forms.Button();
+            this.nextBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Cheesebox = new System.Windows.Forms.GroupBox();
             this.reducedb = new System.Windows.Forms.RadioButton();
@@ -42,8 +44,7 @@
             this.htb = new System.Windows.Forms.RadioButton();
             this.tcb = new System.Windows.Forms.RadioButton();
             this.nysb = new System.Windows.Forms.RadioButton();
-            this.nextBtn = new System.Windows.Forms.Button();
-            this.backBtn = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.sizePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Cheesebox.SuspendLayout();
@@ -63,6 +64,26 @@
             this.sizePanel.Name = "sizePanel";
             this.sizePanel.Size = new System.Drawing.Size(776, 426);
             this.sizePanel.TabIndex = 12;
+            // 
+            // backBtn
+            // 
+            this.backBtn.Location = new System.Drawing.Point(30, 378);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(75, 23);
+            this.backBtn.TabIndex = 17;
+            this.backBtn.Text = "Back";
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
+            // nextBtn
+            // 
+            this.nextBtn.Location = new System.Drawing.Point(657, 378);
+            this.nextBtn.Name = "nextBtn";
+            this.nextBtn.Size = new System.Drawing.Size(75, 23);
+            this.nextBtn.TabIndex = 16;
+            this.nextBtn.Text = "Toppings";
+            this.nextBtn.UseVisualStyleBackColor = true;
+            this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
             // pictureBox1
             // 
@@ -119,12 +140,13 @@
             // 
             // Sizebox
             // 
+            this.Sizebox.Controls.Add(this.radioButton1);
             this.Sizebox.Controls.Add(this.smallb);
             this.Sizebox.Controls.Add(this.medb);
             this.Sizebox.Controls.Add(this.largeb);
             this.Sizebox.Location = new System.Drawing.Point(74, 254);
             this.Sizebox.Name = "Sizebox";
-            this.Sizebox.Size = new System.Drawing.Size(183, 100);
+            this.Sizebox.Size = new System.Drawing.Size(183, 118);
             this.Sizebox.TabIndex = 14;
             this.Sizebox.TabStop = false;
             this.Sizebox.Text = "Size";
@@ -207,25 +229,16 @@
             this.nysb.Text = "New York Style";
             this.nysb.UseVisualStyleBackColor = true;
             // 
-            // nextBtn
+            // radioButton1
             // 
-            this.nextBtn.Location = new System.Drawing.Point(657, 378);
-            this.nextBtn.Name = "nextBtn";
-            this.nextBtn.Size = new System.Drawing.Size(75, 23);
-            this.nextBtn.TabIndex = 16;
-            this.nextBtn.Text = "Toppings";
-            this.nextBtn.UseVisualStyleBackColor = true;
-            this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
-            // 
-            // backBtn
-            // 
-            this.backBtn.Location = new System.Drawing.Point(30, 378);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(75, 23);
-            this.backBtn.TabIndex = 17;
-            this.backBtn.Text = "Back";
-            this.backBtn.UseVisualStyleBackColor = true;
-            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(39, 90);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(79, 17);
+            this.radioButton1.TabIndex = 6;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Extra Large";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // Size
             // 
@@ -265,5 +278,6 @@
         private System.Windows.Forms.RadioButton nysb;
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Button nextBtn;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

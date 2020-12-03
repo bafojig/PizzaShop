@@ -31,10 +31,10 @@ namespace PizzaShop
         {
             List<string> drinks = new List<string>(); 
             Item i = new Item();
-            foreach (string s in drinkBox.CheckedItems)
+            foreach (string s in drinkBox.CheckedItems +)
             {
                 i.name = s;
-                i.price = 2.34;
+                i.price = 2.00;
                 Program.Order.items.Add(i);
             }
             Hide();
