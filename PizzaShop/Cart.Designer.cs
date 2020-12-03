@@ -85,7 +85,7 @@
             this.cob.TabIndex = 11;
             this.cob.Text = "Checkout";
             this.cob.UseVisualStyleBackColor = true;
-            //this.cob.Click += new System.EventHandler(this.cob_Click);
+            this.cob.Click += new System.EventHandler(this.cob_Click);
             // 
             // moreb
             // 
