@@ -40,11 +40,18 @@ namespace PizzaShop
                 price = 2.00;
             else price = 2.50;
 
-            Item i = new Item();
-            i.name = name;
-            i.price = price;
+            Item d = new Item();
+            d.name = name;
+            d.price = price;
 
-            Program.Order.items.Add(i);
+            List<Item> i = new List<Item>();
+
+            if (Program.Order.Items != null)
+                i = Program.Order.Items;
+
+            i.Add(d);
+
+            Program.Order.Items = i;
 
             Hide();
             Cart c = new Cart();

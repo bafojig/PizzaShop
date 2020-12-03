@@ -12,17 +12,20 @@ namespace PizzaShop
 {
     public partial class Toppings : Form
     {
-        public Toppings()
+
+        public Pizza pizza;
+
+        public Toppings(Pizza p)
         {
             InitializeComponent();
             string[] meats = { "Pepperoni", "Bacon", "Anchovies", "Ham" };
             string[] veggies = { "Mushrooms", "Spinach", "Green Olives", "Pineapple" };
-
-            vegBox.Items.AddRange(veggies);
             meatBox.Items.AddRange(meats);
+            vegBox.Items.AddRange(veggies);
+            pizza = p;
         }
 
-        public Pizza p;
+        
 
         private void addCart_Click(object sender, EventArgs e)
         {
@@ -36,8 +39,17 @@ namespace PizzaShop
                 tops.Add(s);
             }
 
-            p.toppings = tops;
-            Program.Order.items.Add(p);
+            pizza.toppings = tops;
+
+            List<Item> i = new List<Item>();
+
+            if (Program.Order.Items != null)
+                i = Program.Order.Items;
+
+            i.Add(pizza);
+
+            Program.Order.Items = i;
+            
             Hide();
             Cart c = new Cart();
             c.Show();
@@ -47,7 +59,7 @@ namespace PizzaShop
         {
             Hide();
             Size s = new Size();
-            s.p = p;
+            s.p = pizza;
         }
 
         private void meatBox_SelectedIndexChanged(object sender, EventArgs e)

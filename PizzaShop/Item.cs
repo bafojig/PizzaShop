@@ -12,7 +12,7 @@ namespace PizzaShop
         public double price;
         
 
-        public static void AddToOrder(Order o)
+        public static void AddToOrder()
         {
 
         }

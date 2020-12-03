@@ -86,7 +86,6 @@
       <DependentUpon>EditAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Item.cs" />
-    <Compile Include="Order.cs" />
     <Compile Include="PaymentInfo.cs" />
     <Compile Include="Pizza.cs" />
     <Compile Include="testDataSet.cs">

@@ -87,7 +87,6 @@
             this.receiptPanel.Name = "receiptPanel";
             this.receiptPanel.Size = new System.Drawing.Size(751, 426);
             this.receiptPanel.TabIndex = 18;
-            this.receiptPanel.Visible = false;
             // 
             // dataSet1
             // 

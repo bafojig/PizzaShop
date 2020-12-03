@@ -15,10 +15,21 @@ namespace PizzaShop
         public Cart()
         {
             InitializeComponent();
+            string s = "";
+            double d = 0 ;
+            foreach(Item i in Program.Order.Items)
+            {
+                s = s + i.name + "...." + i.price.ToString() + "\n";
+                d = d + i.price;
+            }
+
+            s = s + "/n/n" + "Subtotal:  " + d;
+            
+            richTextBox1.Text = s;
         }
 
         string user;
-        Order order;
+
 
         private void button1_Click(object sender, EventArgs e)
         {
