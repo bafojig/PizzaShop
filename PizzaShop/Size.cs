@@ -17,7 +17,7 @@ namespace PizzaShop
             InitializeComponent();
         }
 
-        public Pizza p;
+        public Pizza p = new Pizza();
 
         private void backBtn_Click(object sender, EventArgs e)
         {
@@ -59,9 +59,8 @@ namespace PizzaShop
             if (anythingselected)
             {
                 Hide();
-                Toppings t = new Toppings();
+                Toppings t = new Toppings(p);
                 t.Show();
-                t.p = p;
             }
 
 

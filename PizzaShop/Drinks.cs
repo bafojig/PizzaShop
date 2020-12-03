@@ -57,5 +57,10 @@ namespace PizzaShop
             Home h = new Home();
             h.Show();
         }
+
+        private void drinkBox_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

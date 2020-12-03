@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.drinksPanel = new System.Windows.Forms.Panel();
+            this.drinkBox = new System.Windows.Forms.GroupBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.SizeOptionGroup = new System.Windows.Forms.GroupBox();
             this.LargeSizeOption = new System.Windows.Forms.RadioButton();
             this.MediumSizeOption = new System.Windows.Forms.RadioButton();
@@ -36,15 +42,9 @@
             this.backbutton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.addCart = new System.Windows.Forms.Button();
-            this.drinkBox = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.drinksPanel.SuspendLayout();
-            this.SizeOptionGroup.SuspendLayout();
             this.drinkBox.SuspendLayout();
+            this.SizeOptionGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // drinksPanel
@@ -58,6 +58,75 @@
             this.drinksPanel.Name = "drinksPanel";
             this.drinksPanel.Size = new System.Drawing.Size(726, 398);
             this.drinksPanel.TabIndex = 10;
+            // 
+            // drinkBox
+            // 
+            this.drinkBox.Controls.Add(this.radioButton5);
+            this.drinkBox.Controls.Add(this.radioButton4);
+            this.drinkBox.Controls.Add(this.radioButton3);
+            this.drinkBox.Controls.Add(this.radioButton2);
+            this.drinkBox.Controls.Add(this.radioButton1);
+            this.drinkBox.Location = new System.Drawing.Point(18, 131);
+            this.drinkBox.Name = "drinkBox";
+            this.drinkBox.Size = new System.Drawing.Size(158, 144);
+            this.drinkBox.TabIndex = 16;
+            this.drinkBox.TabStop = false;
+            this.drinkBox.Enter += new System.EventHandler(this.drinkBox_Enter);
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(6, 117);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(98, 17);
+            this.radioButton5.TabIndex = 4;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Diet Dr. Pepper";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(6, 94);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(76, 17);
+            this.radioButton4.TabIndex = 3;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Dr. Pepper";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(6, 70);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(52, 17);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Sprite";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(6, 47);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(72, 17);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Diet Coke";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(6, 24);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(74, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Coca-Cola";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // SizeOptionGroup
             // 
@@ -133,74 +202,6 @@
             this.addCart.UseVisualStyleBackColor = true;
             this.addCart.Click += new System.EventHandler(this.addCart_Click);
             // 
-            // drinkBox
-            // 
-            this.drinkBox.Controls.Add(this.radioButton5);
-            this.drinkBox.Controls.Add(this.radioButton4);
-            this.drinkBox.Controls.Add(this.radioButton3);
-            this.drinkBox.Controls.Add(this.radioButton2);
-            this.drinkBox.Controls.Add(this.radioButton1);
-            this.drinkBox.Location = new System.Drawing.Point(18, 131);
-            this.drinkBox.Name = "drinkBox";
-            this.drinkBox.Size = new System.Drawing.Size(158, 144);
-            this.drinkBox.TabIndex = 16;
-            this.drinkBox.TabStop = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 24);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(74, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Coca-Cola";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 47);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(72, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Diet Coke";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(6, 70);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(52, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Sprite";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(6, 94);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(76, 17);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Dr. Pepper";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(6, 117);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(98, 17);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Diet Dr. Pepper";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
             // Drinks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,10 +212,10 @@
             this.Text = "Drinks";
             this.drinksPanel.ResumeLayout(false);
             this.drinksPanel.PerformLayout();
-            this.SizeOptionGroup.ResumeLayout(false);
-            this.SizeOptionGroup.PerformLayout();
             this.drinkBox.ResumeLayout(false);
             this.drinkBox.PerformLayout();
+            this.SizeOptionGroup.ResumeLayout(false);
+            this.SizeOptionGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
