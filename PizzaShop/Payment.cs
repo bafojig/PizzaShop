@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,11 +85,50 @@ namespace PizzaShop
                 pi.method = "Debit Card";
 
             Program.User.Pi = pi;
-
             Program.User.saveInfo();
 
+            string readContents;
             
-            string payment = PaymentGroup.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+            string path = AppContext.BaseDirectory + "orders.txt";
+            if (!File.Exists(path))
+            {
+                // Create a file to write to.
+                using (StreamWriter sw = File.CreateText(path))
+                {
+                    sw.Write(Program.Order.stringThis());
+                }
+                using (StreamReader streamReader = new StreamReader(AppContext.BaseDirectory + "orders.txt"))
+                {
+                    char[] key = { '$' };
+                    readContents = streamReader.ReadToEnd();
+                    string[] lines = readContents.Split(key, StringSplitOptions.RemoveEmptyEntries);
+                    Program.Order.OrderNum1 = lines.Length;
+
+                }
+            }
+            else
+            {
+                using (StreamReader streamReader = new StreamReader(AppContext.BaseDirectory + "orders.txt"))
+                {
+                    char[] key = { '$' };
+                    readContents = streamReader.ReadToEnd();
+                    string[] lines = readContents.Split(key, StringSplitOptions.RemoveEmptyEntries);
+                    Program.Order.OrderNum1 = lines.Length;
+                }
+
+
+                using (StreamWriter sw = File.AppendText(path))
+                {
+                    sw.Write(Program.Order.stringThis());
+                }
+            }
+
+
+
+
+                string payment = PaymentGroup.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+
+
 
             Hide();
             Receipt re = new Receipt();

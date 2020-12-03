@@ -54,6 +54,7 @@ namespace PizzaShop
 
             }
 
+            
            
         }
 
@@ -95,9 +96,9 @@ namespace PizzaShop
                 else return t = 0;
             }
 
-                public static void placeOrder()
+            public static string stringThis()
             {
-
+                return OrderNum + " " + Items[0].name + " plus more" + "..." + getTotal() + '$';
             }
 
 

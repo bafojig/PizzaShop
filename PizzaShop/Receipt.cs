@@ -37,6 +37,7 @@ namespace PizzaShop
         private void homeb_Click(object sender, EventArgs e)
         {
             //go home 
+            Program.Order.Items = null;
             Hide();
             Home h = new Home();
             h.Show();
@@ -45,6 +46,7 @@ namespace PizzaShop
         private void cartb_Click(object sender, EventArgs e)
         {
             //go to cart
+            Program.Order.Items = null;
             Hide();
             Cart c = new Cart();
             c.Show();
@@ -53,6 +55,7 @@ namespace PizzaShop
         private void logoutb_Click(object sender, EventArgs e)
         {
             //exit program
+            Program.Order.Items = null;
             Hide();
             Title t = new Title();
             t.Show();

@@ -52,9 +52,24 @@ namespace PizzaShop
 
         private void rbutton_Click(object sender, EventArgs e)
         {
+
+            if (Program.User.Password == password.Text && textBox1.Text == confirmbox.Text)
+            {
+                Program.User.Password = confirmbox.Text;
+                Program.User.saveInfo();
+            }
             Hide();
-            Login r = new Login();
+            Home r = new Home();
             r.Show();
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Admin a = new Admin();
+            Hide();
+            a.Show();
+
         }
     }
 }

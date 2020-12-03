@@ -61,7 +61,7 @@ namespace PizzaShop
                 toppings = toppings + ", " + s;
             }
 
-            name = pizza.size + " " + pizza.crust + " pizza with " + pizza.cheese + "\n" + "Toppings: " + toppings;
+            name = pizza.size + " " + pizza.crust + " pizza with " + pizza.cheese + "Toppings: " + toppings;
 
             pizza.name = name;
             
@@ -84,6 +84,7 @@ namespace PizzaShop
         {
             Hide();
             Size s = new Size();
+            s.Show();
             s.p = pizza;
         }
 

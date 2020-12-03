@@ -39,6 +39,7 @@
             this.cartb = new System.Windows.Forms.Button();
             this.logoutb = new System.Windows.Forms.Button();
             this.editPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.editPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             this.rbutton.Name = "rbutton";
             this.rbutton.Size = new System.Drawing.Size(75, 23);
             this.rbutton.TabIndex = 27;
-            this.rbutton.Text = "Login";
+            this.rbutton.Text = "Submit";
             this.rbutton.UseVisualStyleBackColor = true;
             this.rbutton.Click += new System.EventHandler(this.rbutton_Click);
             // 
@@ -132,6 +133,7 @@
             // 
             // editPanel
             // 
+            this.editPanel.Controls.Add(this.button1);
             this.editPanel.Controls.Add(this.logoutb);
             this.editPanel.Controls.Add(this.cartb);
             this.editPanel.Controls.Add(this.homeb);
@@ -146,6 +148,16 @@
             this.editPanel.Name = "editPanel";
             this.editPanel.Size = new System.Drawing.Size(776, 426);
             this.editPanel.TabIndex = 25;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(608, 349);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 23);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "View All Orders";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // EditAccount
             // 
@@ -175,5 +187,6 @@
         private System.Windows.Forms.Button cartb;
         private System.Windows.Forms.Button logoutb;
         private System.Windows.Forms.Panel editPanel;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -68,6 +68,14 @@ namespace PizzaShop
             string delcar = DelcarGroupBox.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
 
 
+            string[] a = { streetText.Text, AptText.Text, cityText.Text, stateText.Text, zipText.Text };
+            Program.User.Address = a;
+
+            Payment p = new Payment();
+            Hide();
+            p.Show();
+            
+
         }
     }
 }

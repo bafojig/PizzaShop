@@ -16,12 +16,14 @@ namespace PizzaShop
         {
             InitializeComponent();
             string s = "";
-            double d = 0 ;
-            foreach(Item i in Program.Order.Items)
+            double d = 0;
+            if (Program.Order.Items != null) { 
+            foreach (Item i in Program.Order.Items)
             {
                 s = s + i.name + "...." + i.price.ToString() + "\n";
                 d = d + i.price;
             }
+        }
 
             s = s + "\n\n" + "Subtotal:  " + d;
             
@@ -58,6 +60,13 @@ namespace PizzaShop
             Hide();
             Home h = new Home();
             h.Show();
+        }
+
+        private void cob_Click(object sender, EventArgs e)
+        {
+            CheckOut c = new CheckOut();
+            Hide();
+            c.Show();
         }
     }
 }
