@@ -33,11 +33,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.addCart = new System.Windows.Forms.Button();
             this.drinkBox = new System.Windows.Forms.CheckedListBox();
+            this.SmallSizeOption = new System.Windows.Forms.RadioButton();
+            this.DrinkSizeOption = new System.Windows.Forms.GroupBox();
+            this.MediumSizeOption = new System.Windows.Forms.RadioButton();
+            this.LargeSizeOption = new System.Windows.Forms.RadioButton();
             this.drinksPanel.SuspendLayout();
+            this.DrinkSizeOption.SuspendLayout();
             this.SuspendLayout();
             // 
             // drinksPanel
             // 
+            this.drinksPanel.Controls.Add(this.DrinkSizeOption);
             this.drinksPanel.Controls.Add(this.backbutton);
             this.drinksPanel.Controls.Add(this.label2);
             this.drinksPanel.Controls.Add(this.addCart);
@@ -50,16 +56,9 @@
             // 
             // backbutton
             // 
-<<<<<<< HEAD
             this.backbutton.Location = new System.Drawing.Point(181, 198);
             this.backbutton.Name = "backbutton";
             this.backbutton.Size = new System.Drawing.Size(75, 23);
-=======
-            this.backbutton.Location = new System.Drawing.Point(573, 564);
-            this.backbutton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.backbutton.Name = "backbutton";
-            this.backbutton.Size = new System.Drawing.Size(238, 65);
->>>>>>> parent of 3384358... Drinks GUI
             this.backbutton.TabIndex = 13;
             this.backbutton.Text = "Go Back";
             this.backbutton.UseVisualStyleBackColor = true;
@@ -68,29 +67,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(340, 23);
-=======
-            this.label2.Location = new System.Drawing.Point(1077, 65);
-            this.label2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
->>>>>>> parent of 3384358... Drinks GUI
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 37);
             this.label2.TabIndex = 12;
             this.label2.Text = "Drinks";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // addCart
             // 
-<<<<<<< HEAD
             this.addCart.Location = new System.Drawing.Point(470, 198);
             this.addCart.Name = "addCart";
             this.addCart.Size = new System.Drawing.Size(75, 23);
-=======
-            this.addCart.Location = new System.Drawing.Point(1488, 564);
-            this.addCart.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.addCart.Name = "addCart";
-            this.addCart.Size = new System.Drawing.Size(238, 65);
->>>>>>> parent of 3384358... Drinks GUI
             this.addCart.TabIndex = 11;
             this.addCart.Text = "Add to Cart";
             this.addCart.UseVisualStyleBackColor = true;
@@ -99,7 +87,6 @@
             // drinkBox
             // 
             this.drinkBox.FormattingEnabled = true;
-<<<<<<< HEAD
             this.drinkBox.Location = new System.Drawing.Point(296, 42);
             this.drinkBox.Name = "drinkBox";
             this.drinkBox.Size = new System.Drawing.Size(138, 334);
@@ -137,14 +124,6 @@
             this.LargeSizeOption.TabStop = true;
             this.LargeSizeOption.Text = "Large - $2.50";
             this.LargeSizeOption.UseVisualStyleBackColor = true;
-=======
-            this.drinkBox.Location = new System.Drawing.Point(937, 120);
-            this.drinkBox.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.drinkBox.Name = "drinkBox";
-            this.drinkBox.Size = new System.Drawing.Size(428, 940);
-            this.drinkBox.TabIndex = 10;
-            this.drinkBox.SelectedIndexChanged += new System.EventHandler(this.drinkBox_SelectedIndexChanged);
->>>>>>> parent of 3384358... Drinks GUI
             // 
             // Address
             // 
@@ -157,6 +136,8 @@
             this.Text = "Drinks";
             this.drinksPanel.ResumeLayout(false);
             this.drinksPanel.PerformLayout();
+            this.DrinkSizeOption.ResumeLayout(false);
+            this.DrinkSizeOption.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -168,5 +149,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button addCart;
         private System.Windows.Forms.CheckedListBox drinkBox;
+        private System.Windows.Forms.RadioButton SmallSizeOption;
+        private System.Windows.Forms.GroupBox DrinkSizeOption;
+        private System.Windows.Forms.RadioButton LargeSizeOption;
+        private System.Windows.Forms.RadioButton MediumSizeOption;
     }
 }
