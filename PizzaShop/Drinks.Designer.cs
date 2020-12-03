@@ -80,7 +80,6 @@
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(98, 17);
             this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Diet Dr. Pepper";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
@@ -91,7 +90,6 @@
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(76, 17);
             this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Dr. Pepper";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
@@ -102,7 +100,6 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(52, 17);
             this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Sprite";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
@@ -113,13 +110,13 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(72, 17);
             this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Diet Coke";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(6, 24);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(74, 17);
@@ -147,13 +144,13 @@
             this.LargeSizeOption.Name = "LargeSizeOption";
             this.LargeSizeOption.Size = new System.Drawing.Size(88, 17);
             this.LargeSizeOption.TabIndex = 16;
-            this.LargeSizeOption.TabStop = true;
             this.LargeSizeOption.Text = "Large - $2.50";
             this.LargeSizeOption.UseVisualStyleBackColor = true;
             // 
             // MediumSizeOption
             // 
             this.MediumSizeOption.AutoSize = true;
+            this.MediumSizeOption.Checked = true;
             this.MediumSizeOption.Location = new System.Drawing.Point(6, 42);
             this.MediumSizeOption.Name = "MediumSizeOption";
             this.MediumSizeOption.Size = new System.Drawing.Size(98, 17);
@@ -169,7 +166,6 @@
             this.SmallSizeOption.Name = "SmallSizeOption";
             this.SmallSizeOption.Size = new System.Drawing.Size(86, 17);
             this.SmallSizeOption.TabIndex = 14;
-            this.SmallSizeOption.TabStop = true;
             this.SmallSizeOption.Text = "Small - $1.75";
             this.SmallSizeOption.UseVisualStyleBackColor = true;
             // 
