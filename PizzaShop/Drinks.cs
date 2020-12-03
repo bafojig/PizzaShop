@@ -34,7 +34,7 @@ namespace PizzaShop
             foreach (string s in drinkBox.CheckedItems)
             {
                 i.name = s;
-                i.price = 2.34;
+                i.price = 2.00;
                 Program.Order.items.Add(i);
             }
             Hide();
