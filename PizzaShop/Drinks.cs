@@ -15,7 +15,7 @@ namespace PizzaShop
         public Address()
         {
             InitializeComponent(); 
-            string[] drinks = { "Coke", "Coke Zero", "Sprite", "Dr. Pepper", "Diet Dr. Pepper" };
+            string[] drinks = { "Coke", "Coke Zero", "Sprite", "Dr. Pepper" };
             drinkBox.Items.AddRange(drinks);
         }
 
@@ -31,10 +31,10 @@ namespace PizzaShop
         {
             List<string> drinks = new List<string>(); 
             Item i = new Item();
+            i.price = 2.00;
             foreach (string s in drinkBox.CheckedItems)
             {
                 i.name = s;
-                i.price = 2.00;
                 Program.Order.items.Add(i);
             }
             Hide();
@@ -43,21 +43,6 @@ namespace PizzaShop
         }
 
         private void drinkBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
