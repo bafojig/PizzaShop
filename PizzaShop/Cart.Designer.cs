@@ -57,6 +57,7 @@
             this.logoutb.TabIndex = 14;
             this.logoutb.Text = "Logout";
             this.logoutb.UseVisualStyleBackColor = true;
+            this.logoutb.Click += new System.EventHandler(this.logoutb_Click);
             // 
             // homeb
             // 
@@ -66,6 +67,7 @@
             this.homeb.TabIndex = 13;
             this.homeb.Text = "Home";
             this.homeb.UseVisualStyleBackColor = true;
+            this.homeb.Click += new System.EventHandler(this.homeb_Click);
             // 
             // richTextBox1
             // 
@@ -83,6 +85,7 @@
             this.cob.TabIndex = 11;
             this.cob.Text = "Checkout";
             this.cob.UseVisualStyleBackColor = true;
+            this.cob.Click += new System.EventHandler(this.cob_Click);
             // 
             // moreb
             // 
@@ -92,6 +95,7 @@
             this.moreb.TabIndex = 10;
             this.moreb.Text = "Order More";
             this.moreb.UseVisualStyleBackColor = true;
+            this.moreb.Click += new System.EventHandler(this.moreb_Click);
             // 
             // Cart
             // 
