@@ -52,9 +52,5 @@ namespace PizzaShop
             //go to edit account.
         }
 
-        private void cartb_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
