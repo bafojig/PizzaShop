@@ -15,6 +15,21 @@ namespace PizzaShop
         public Receipt()
         {
             InitializeComponent();
+            string s = "";
+            double d = 0;
+            double t;
+            if (Program.Order.Items != null)
+            {
+                foreach (Item i in Program.Order.Items)
+                {
+                    s = s + i.name + "...." + i.price.ToString() + "\n";
+                    d = d + i.price;
+                }
+                t = d + (d * .07);
+                s = s + "\n\n" + "Subtotal:  " + d + "\nTax: " + "\nTotal: " + t;
+
+                rcptBox.Text = s;
+            }
         }
 
         //fill in rcptBox with info from the order.

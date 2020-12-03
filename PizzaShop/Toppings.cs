@@ -14,6 +14,8 @@ namespace PizzaShop
     {
 
         public Pizza pizza;
+        public double price;
+        public string name;
 
         public Toppings(Pizza p)
         {
@@ -38,9 +40,31 @@ namespace PizzaShop
             {
                 tops.Add(s);
             }
+            
 
             pizza.toppings = tops;
 
+            if (pizza.size == "Small")
+                price = 5.00;
+            else if (pizza.size == "Medium")
+                price = 7.00;
+            else if (pizza.size == "Large")
+                price = 10.00;
+            else
+                price = 12.00;
+
+            pizza.price = price + (pizza.toppings.Count * .50);
+
+            string toppings = "";
+            foreach (string s in pizza.toppings)
+            {
+                toppings = toppings + ", " + s;
+            }
+
+            name = pizza.size + pizza.crust + " with " + pizza.cheese + " with " + toppings;
+
+            pizza.name = name;
+            
             List<Item> i = new List<Item>();
 
             if (Program.Order.Items != null)

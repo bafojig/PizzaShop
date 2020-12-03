@@ -49,11 +49,12 @@ namespace PizzaShop
                     Program.User.Username = username.Text;
                     Program.User.Password = password.Text;
                     Program.User.saveInfo();
+                    Home h = new Home();
+                    h.Show();
+                    Hide();
                 }
 
-                Home h = new Home();
-                h.Show();
-                Hide();
+                
             }
             else
                 errorLabel.Text = "Passwords don't match";

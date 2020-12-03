@@ -23,12 +23,10 @@ namespace PizzaShop
                 d = d + i.price;
             }
 
-            s = s + "/n/n" + "Subtotal:  " + d;
+            s = s + "\n\n" + "Subtotal:  " + d;
             
             richTextBox1.Text = s;
         }
-
-        string user;
 
 
         private void button1_Click(object sender, EventArgs e)

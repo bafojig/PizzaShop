@@ -42,13 +42,16 @@
             this.backbutton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.addCart = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.drinksPanel.SuspendLayout();
             this.drinkBox.SuspendLayout();
             this.SizeOptionGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // drinksPanel
             // 
+            this.drinksPanel.Controls.Add(this.pictureBox1);
             this.drinksPanel.Controls.Add(this.drinkBox);
             this.drinksPanel.Controls.Add(this.SizeOptionGroup);
             this.drinksPanel.Controls.Add(this.backbutton);
@@ -198,6 +201,14 @@
             this.addCart.UseVisualStyleBackColor = true;
             this.addCart.Click += new System.EventHandler(this.addCart_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(226, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // Drinks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +223,7 @@
             this.drinkBox.PerformLayout();
             this.SizeOptionGroup.ResumeLayout(false);
             this.SizeOptionGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,5 +244,6 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
