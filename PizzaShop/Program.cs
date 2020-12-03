@@ -88,10 +88,10 @@ namespace PizzaShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Title());
-            //Application.Run(new Drinks());
+            //Application.Run(new Title());
+            Application.Run(new Receipt());
 
-         
+
         }
     }
 }

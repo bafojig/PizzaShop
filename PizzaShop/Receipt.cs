@@ -22,18 +22,30 @@ namespace PizzaShop
         private void homeb_Click(object sender, EventArgs e)
         {
             //go home 
+            Hide();
+            Home h = new Home();
+            h.Show();
         }
 
         private void cartb_Click(object sender, EventArgs e)
         {
             //go to cart
+            Hide();
+            Cart c = new Cart();
+            c.Show();
         }
 
         private void logoutb_Click(object sender, EventArgs e)
         {
             //exit program
+            Hide();
+            Title t = new Title();
+            t.Show();
         }
 
+        private void Receipt_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

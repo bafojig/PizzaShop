@@ -73,6 +73,7 @@
             this.titlePanel.Name = "titlePanel";
             this.titlePanel.Size = new System.Drawing.Size(744, 426);
             this.titlePanel.TabIndex = 4;
+            this.titlePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.titlePanel_Paint);
             // 
             // Title
             // 

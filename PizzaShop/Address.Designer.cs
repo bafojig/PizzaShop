@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.addressPanel = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DelcarGroupBox = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,12 +48,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.addressPanel.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.DelcarGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // addressPanel
             // 
-            this.addressPanel.Controls.Add(this.groupBox1);
+            this.addressPanel.Controls.Add(this.DelcarGroupBox);
             this.addressPanel.Controls.Add(this.stateText);
             this.addressPanel.Controls.Add(this.AptText);
             this.addressPanel.Controls.Add(this.zipText);
@@ -73,16 +73,16 @@
             this.addressPanel.Size = new System.Drawing.Size(776, 426);
             this.addressPanel.TabIndex = 21;
             // 
-            // groupBox1
+            // DelcarGroupBox
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(52, 38);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(238, 58);
-            this.groupBox1.TabIndex = 35;
-            this.groupBox1.TabStop = false;
+            this.DelcarGroupBox.Controls.Add(this.radioButton1);
+            this.DelcarGroupBox.Controls.Add(this.radioButton2);
+            this.DelcarGroupBox.Controls.Add(this.label6);
+            this.DelcarGroupBox.Location = new System.Drawing.Point(52, 38);
+            this.DelcarGroupBox.Name = "DelcarGroupBox";
+            this.DelcarGroupBox.Size = new System.Drawing.Size(238, 58);
+            this.DelcarGroupBox.TabIndex = 35;
+            this.DelcarGroupBox.TabStop = false;
             // 
             // radioButton1
             // 
@@ -158,6 +158,7 @@
             this.logoutb.TabIndex = 29;
             this.logoutb.Text = "Logout";
             this.logoutb.UseVisualStyleBackColor = true;
+            this.logoutb.Click += new System.EventHandler(this.logoutb_Click);
             // 
             // cartb
             // 
@@ -167,6 +168,7 @@
             this.cartb.TabIndex = 28;
             this.cartb.Text = "Cart";
             this.cartb.UseVisualStyleBackColor = true;
+            this.cartb.Click += new System.EventHandler(this.cartb_Click);
             // 
             // homeb
             // 
@@ -176,6 +178,7 @@
             this.homeb.TabIndex = 27;
             this.homeb.Text = "Home";
             this.homeb.UseVisualStyleBackColor = true;
+            this.homeb.Click += new System.EventHandler(this.homeb_Click);
             // 
             // toPayment
             // 
@@ -185,6 +188,7 @@
             this.toPayment.TabIndex = 26;
             this.toPayment.Text = "Go to Payment";
             this.toPayment.UseVisualStyleBackColor = true;
+            this.toPayment.Click += new System.EventHandler(this.toPayment_Click);
             // 
             // label5
             // 
@@ -242,8 +246,8 @@
             this.Load += new System.EventHandler(this.CheckOut_Load);
             this.addressPanel.ResumeLayout(false);
             this.addressPanel.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.DelcarGroupBox.ResumeLayout(false);
+            this.DelcarGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -251,7 +255,7 @@
         #endregion
 
         private System.Windows.Forms.Panel addressPanel;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox DelcarGroupBox;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label6;

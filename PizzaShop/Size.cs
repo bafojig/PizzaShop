@@ -61,7 +61,6 @@ namespace PizzaShop
                 Hide();
                 Toppings t = new Toppings(p);
                 t.Show();
-                
             }
 
 
