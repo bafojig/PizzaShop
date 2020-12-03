@@ -37,6 +37,7 @@ namespace PizzaShop
             }
 
             p.toppings = tops;
+            p.name = p.size + " " + "pizza with " + p.toppings.ToString();
             Program.Order.items.Add(p);
             Hide();
             Cart c = new Cart();
@@ -48,6 +49,11 @@ namespace PizzaShop
             Hide();
             Size s = new Size();
             s.p = p;
+        }
+
+        private void meatBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

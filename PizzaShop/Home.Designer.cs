@@ -71,9 +71,10 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(511, 217);
+            this.pictureBox2.Image = global::PizzaShop.Properties.Resources.EVBvAYUafsdfXYAE4TYH;
+            this.pictureBox2.Location = new System.Drawing.Point(460, 187);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(204, 157);
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
@@ -85,6 +86,7 @@
             this.cartb.TabIndex = 13;
             this.cartb.Text = "Cart";
             this.cartb.UseVisualStyleBackColor = true;
+            this.cartb.Click += new System.EventHandler(this.cartb_Click_1);
             // 
             // logoutb
             // 
@@ -131,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 426);
             this.Controls.Add(this.homePanel);
             this.Name = "Home";
             this.Text = "Home";
