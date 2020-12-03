@@ -17,39 +17,15 @@ namespace PizzaShop
             InitializeComponent();
         }
 
+        string user;
+        Order order;
+
         private void button1_Click(object sender, EventArgs e)
         {
-            //blah
+
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void homeb_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Home h = new Home();
-        }
-
-        private void logoutb_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void moreb_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Home h = new Home();
-        }
-
-        private void cob_Click(object sender, EventArgs e)
         {
 
         }
