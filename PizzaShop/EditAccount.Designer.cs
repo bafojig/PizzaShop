@@ -66,6 +66,7 @@
             this.rbutton.TabIndex = 27;
             this.rbutton.Text = "Login";
             this.rbutton.UseVisualStyleBackColor = true;
+            this.rbutton.Click += new System.EventHandler(this.rbutton_Click);
             // 
             // label3
             // 

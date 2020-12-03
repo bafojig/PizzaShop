@@ -49,5 +49,12 @@ namespace PizzaShop
             Title t = new Title();
             t.Show();
         }
+
+        private void rbutton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Login r = new Login();
+            r.Show();
+        }
     }
 }

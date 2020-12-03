@@ -87,7 +87,6 @@
             this.receiptPanel.Name = "receiptPanel";
             this.receiptPanel.Size = new System.Drawing.Size(751, 426);
             this.receiptPanel.TabIndex = 18;
-            this.receiptPanel.Visible = false;
             // 
             // dataSet1
             // 
@@ -101,6 +100,7 @@
             this.Controls.Add(this.receiptPanel);
             this.Name = "Receipt";
             this.Text = "Receipt";
+            this.Load += new System.EventHandler(this.Receipt_Load);
             this.receiptPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);

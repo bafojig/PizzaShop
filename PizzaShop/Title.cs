@@ -45,5 +45,10 @@ namespace PizzaShop
             r.Show();
             
         }
+
+        private void titlePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
