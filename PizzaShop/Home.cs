@@ -17,7 +17,7 @@ namespace PizzaShop
 
         public Home()
         {
-
+            InitializeComponent();
         }
 
         private void homePanel_Paint(object sender, PaintEventArgs e)
@@ -27,30 +27,57 @@ namespace PizzaShop
 
         private void pizzab_Click(object sender, EventArgs e)
         {
+            //NOT WORKING
+        }
+
+        private void drinkb_Click(object sender, EventArgs e)
+        {
+            //NOT WORKING
+        }
+
+        private void cartb_Click(object sender, EventArgs e)
+        {
+            //go to cart NOT WORKING
+        }
+
+        private void logoutb_Click(object sender, EventArgs e)
+        {
+            //exit program NOT WORKING
+        }
+
+        private void editb_Click(object sender, EventArgs e)
+        {
+            //go to edit account. NOT WORKING
+        }
+
+        private void pizzab_Click_1(object sender, EventArgs e)
+        {
+
             Hide();
             Size s = new Size();
             s.Show();
         }
 
-        private void drinkb_Click(object sender, EventArgs e)
+        private void drinkb_Click_1(object sender, EventArgs e)
         {
-            //go to drink menu
+            Hide();
+            Drinks d = new Drinks();
+            d.Show();
         }
 
-        private void cartb_Click(object sender, EventArgs e)
+        private void cartb_Click_1(object sender, EventArgs e)
         {
-            //go to cart
+
         }
 
-        private void logoutb_Click(object sender, EventArgs e)
+        private void logoutb_Click_1(object sender, EventArgs e)
         {
-            //exit program
+
         }
 
-        private void editb_Click(object sender, EventArgs e)
+        private void editb_Click_1(object sender, EventArgs e)
         {
-            //go to edit account.
-        }
 
+        }
     }
 }

@@ -15,7 +15,6 @@ namespace PizzaShop
         public Size()
         {
             InitializeComponent();
-            
         }
 
         public Pizza p;

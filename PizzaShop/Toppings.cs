@@ -49,5 +49,10 @@ namespace PizzaShop
             Size s = new Size();
             s.p = p;
         }
+
+        private void meatBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

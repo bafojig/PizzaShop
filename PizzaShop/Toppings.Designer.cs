@@ -104,6 +104,7 @@
             this.meatBox.Name = "meatBox";
             this.meatBox.Size = new System.Drawing.Size(138, 334);
             this.meatBox.TabIndex = 6;
+            this.meatBox.SelectedIndexChanged += new System.EventHandler(this.meatBox_SelectedIndexChanged);
             // 
             // Toppings
             // 

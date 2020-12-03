@@ -33,7 +33,10 @@ namespace PizzaShop
                 {
                     sw.WriteLine(Username);
                     sw.WriteLine(Password);
-                    sw.WriteLine(Address.ToString());
+                    if (Address != null)
+                    {
+                        sw.WriteLine(Address.ToString());
+                    }
                     sw.WriteLine(Pi);
                     sw.WriteLine(Admin);
                 }
@@ -84,6 +87,7 @@ namespace PizzaShop
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Title());
+            //Application.Run(new Drinks());
 
          
         }

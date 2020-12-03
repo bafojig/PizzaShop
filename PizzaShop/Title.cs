@@ -22,7 +22,6 @@ namespace PizzaShop
             Hide();
             Register r = new Register();
             r.Show();
-            Console.Write("blah");
         }
 
         private void Title_Load(object sender, EventArgs e)
