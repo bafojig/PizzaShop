@@ -67,17 +67,23 @@ namespace PizzaShop
 
         private void cartb_Click_1(object sender, EventArgs e)
         {
-
+            Hide();
+            Cart c = new Cart();
+            c.Show();
         }
 
         private void logoutb_Click_1(object sender, EventArgs e)
         {
-
+            Hide();
+            Title t = new Title();
+            t.Show();
         }
 
         private void editb_Click_1(object sender, EventArgs e)
         {
-
+            Hide();
+            EditAccount ea = new EditAccount();
+            ea.Show();
         }
     }
 }

@@ -48,6 +48,7 @@ namespace PizzaShop
         {
             Hide();
             Home h = new Home();
+            h.Show();
         }
     }
 }

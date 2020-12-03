@@ -107,6 +107,7 @@
             this.homeb.TabIndex = 32;
             this.homeb.Text = "Home";
             this.homeb.UseVisualStyleBackColor = true;
+            this.homeb.Click += new System.EventHandler(this.homeb_Click);
             // 
             // cartb
             // 
@@ -116,6 +117,7 @@
             this.cartb.TabIndex = 33;
             this.cartb.Text = "Cart";
             this.cartb.UseVisualStyleBackColor = true;
+            this.cartb.Click += new System.EventHandler(this.cartb_Click);
             // 
             // logoutb
             // 
@@ -125,6 +127,7 @@
             this.logoutb.TabIndex = 34;
             this.logoutb.Text = "Logout";
             this.logoutb.UseVisualStyleBackColor = true;
+            this.logoutb.Click += new System.EventHandler(this.logoutb_Click);
             // 
             // editPanel
             // 
