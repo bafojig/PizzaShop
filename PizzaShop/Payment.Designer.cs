@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.PaymentGroup = new System.Windows.Forms.GroupBox();
             this.checkButton = new System.Windows.Forms.RadioButton();
             this.ccButton = new System.Windows.Forms.RadioButton();
             this.codButton = new System.Windows.Forms.RadioButton();
@@ -37,9 +37,9 @@
             this.monthBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ZipCodeBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.SecurityCode = new System.Windows.Forms.TextBox();
             this.homeb = new System.Windows.Forms.Button();
             this.cartb = new System.Windows.Forms.Button();
             this.logoutb = new System.Windows.Forms.Button();
@@ -47,24 +47,24 @@
             this.label5 = new System.Windows.Forms.Label();
             this.yearBox = new System.Windows.Forms.TextBox();
             this.payPanel = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.totalBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.totalBox = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.PaymentGroup.SuspendLayout();
             this.payPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // PaymentGroup
             // 
-            this.groupBox1.Controls.Add(this.checkButton);
-            this.groupBox1.Controls.Add(this.ccButton);
-            this.groupBox1.Controls.Add(this.codButton);
-            this.groupBox1.Location = new System.Drawing.Point(40, 44);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 18;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Payment Method";
+            this.PaymentGroup.Controls.Add(this.checkButton);
+            this.PaymentGroup.Controls.Add(this.ccButton);
+            this.PaymentGroup.Controls.Add(this.codButton);
+            this.PaymentGroup.Location = new System.Drawing.Point(40, 44);
+            this.PaymentGroup.Name = "PaymentGroup";
+            this.PaymentGroup.Size = new System.Drawing.Size(200, 100);
+            this.PaymentGroup.TabIndex = 18;
+            this.PaymentGroup.TabStop = false;
+            this.PaymentGroup.Text = "Payment Method";
             // 
             // checkButton
             // 
@@ -73,7 +73,6 @@
             this.checkButton.Name = "checkButton";
             this.checkButton.Size = new System.Drawing.Size(99, 17);
             this.checkButton.TabIndex = 2;
-            this.checkButton.TabStop = true;
             this.checkButton.Text = "Pay with Check";
             this.checkButton.UseVisualStyleBackColor = true;
             // 
@@ -84,13 +83,13 @@
             this.ccButton.Name = "ccButton";
             this.ccButton.Size = new System.Drawing.Size(160, 17);
             this.ccButton.TabIndex = 1;
-            this.ccButton.TabStop = true;
             this.ccButton.Text = "Pay Now with Credit or Debit";
             this.ccButton.UseVisualStyleBackColor = true;
             // 
             // codButton
             // 
             this.codButton.AutoSize = true;
+            this.codButton.Checked = true;
             this.codButton.Location = new System.Drawing.Point(19, 20);
             this.codButton.Name = "codButton";
             this.codButton.Size = new System.Drawing.Size(105, 17);
@@ -141,12 +140,12 @@
             this.label3.TabIndex = 23;
             this.label3.Text = "Billing Zip Code";
             // 
-            // textBox3
+            // ZipCodeBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(59, 363);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 24;
+            this.ZipCodeBox.Location = new System.Drawing.Point(59, 363);
+            this.ZipCodeBox.Name = "ZipCodeBox";
+            this.ZipCodeBox.Size = new System.Drawing.Size(100, 20);
+            this.ZipCodeBox.TabIndex = 24;
             // 
             // label4
             // 
@@ -157,12 +156,12 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "Security Code";
             // 
-            // textBox4
+            // SecurityCode
             // 
-            this.textBox4.Location = new System.Drawing.Point(279, 310);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 26;
+            this.SecurityCode.Location = new System.Drawing.Point(279, 310);
+            this.SecurityCode.Name = "SecurityCode";
+            this.SecurityCode.Size = new System.Drawing.Size(100, 20);
+            this.SecurityCode.TabIndex = 26;
             // 
             // homeb
             // 
@@ -232,19 +231,35 @@
             this.payPanel.Controls.Add(this.logoutb);
             this.payPanel.Controls.Add(this.cartb);
             this.payPanel.Controls.Add(this.homeb);
-            this.payPanel.Controls.Add(this.textBox4);
+            this.payPanel.Controls.Add(this.SecurityCode);
             this.payPanel.Controls.Add(this.label4);
-            this.payPanel.Controls.Add(this.textBox3);
+            this.payPanel.Controls.Add(this.ZipCodeBox);
             this.payPanel.Controls.Add(this.label3);
             this.payPanel.Controls.Add(this.label2);
             this.payPanel.Controls.Add(this.monthBox);
             this.payPanel.Controls.Add(this.ccBox);
             this.payPanel.Controls.Add(this.label1);
-            this.payPanel.Controls.Add(this.groupBox1);
+            this.payPanel.Controls.Add(this.PaymentGroup);
             this.payPanel.Location = new System.Drawing.Point(12, 12);
             this.payPanel.Name = "payPanel";
             this.payPanel.Size = new System.Drawing.Size(776, 426);
             this.payPanel.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(540, 153);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(31, 13);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "Total";
+            // 
+            // totalBox
+            // 
+            this.totalBox.Location = new System.Drawing.Point(535, 169);
+            this.totalBox.Name = "totalBox";
+            this.totalBox.Size = new System.Drawing.Size(165, 20);
+            this.totalBox.TabIndex = 34;
             // 
             // checkBox1
             // 
@@ -256,22 +271,6 @@
             this.checkBox1.Text = "Save payment info?";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // totalBox
-            // 
-            this.totalBox.Location = new System.Drawing.Point(535, 169);
-            this.totalBox.Name = "totalBox";
-            this.totalBox.Size = new System.Drawing.Size(165, 20);
-            this.totalBox.TabIndex = 34;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(540, 153);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 13);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Total";
-            // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,8 +279,8 @@
             this.Controls.Add(this.payPanel);
             this.Name = "Payment";
             this.Text = "Payment";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.PaymentGroup.ResumeLayout(false);
+            this.PaymentGroup.PerformLayout();
             this.payPanel.ResumeLayout(false);
             this.payPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -290,7 +289,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox PaymentGroup;
         private System.Windows.Forms.RadioButton checkButton;
         private System.Windows.Forms.RadioButton ccButton;
         private System.Windows.Forms.RadioButton codButton;
@@ -299,9 +298,9 @@
         private System.Windows.Forms.TextBox monthBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox ZipCodeBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox SecurityCode;
         private System.Windows.Forms.Button homeb;
         private System.Windows.Forms.Button cartb;
         private System.Windows.Forms.Button logoutb;
