@@ -38,8 +38,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.registerPanel = new System.Windows.Forms.Panel();
             this.errorLabel = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.registerPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // rbutton
@@ -112,6 +116,9 @@
             // 
             // registerPanel
             // 
+            this.registerPanel.Controls.Add(this.label5);
+            this.registerPanel.Controls.Add(this.label4);
+            this.registerPanel.Controls.Add(this.pictureBox2);
             this.registerPanel.Controls.Add(this.errorLabel);
             this.registerPanel.Controls.Add(this.pictureBox1);
             this.registerPanel.Controls.Add(this.label1);
@@ -134,6 +141,38 @@
             this.errorLabel.Size = new System.Drawing.Size(0, 13);
             this.errorLabel.TabIndex = 14;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PizzaShop.Properties.Resources.pizza_car;
+            this.pictureBox2.Location = new System.Drawing.Point(121, 14);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(178, 168);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.IndianRed;
+            this.label4.Location = new System.Drawing.Point(314, 67);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(233, 37);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Mom and Pops";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.IndianRed;
+            this.label5.Location = new System.Drawing.Point(314, 113);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 37);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Pizza";
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +185,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.registerPanel.ResumeLayout(false);
             this.registerPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -162,5 +202,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel registerPanel;
         private System.Windows.Forms.Label errorLabel;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
