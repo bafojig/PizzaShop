@@ -32,11 +32,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbutton = new System.Windows.Forms.Button();
             this.loginPanel = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.loginPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,14 +73,6 @@
             this.password.Size = new System.Drawing.Size(146, 20);
             this.password.TabIndex = 9;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(369, 80);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
             // lbutton
             // 
             this.lbutton.Location = new System.Drawing.Point(385, 324);
@@ -91,6 +85,8 @@
             // 
             // loginPanel
             // 
+            this.loginPanel.Controls.Add(this.label4);
+            this.loginPanel.Controls.Add(this.label3);
             this.loginPanel.Controls.Add(this.lbutton);
             this.loginPanel.Controls.Add(this.pictureBox1);
             this.loginPanel.Controls.Add(this.password);
@@ -102,6 +98,39 @@
             this.loginPanel.Size = new System.Drawing.Size(776, 426);
             this.loginPanel.TabIndex = 6;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PizzaShop.Properties.Resources.pizza_car;
+            this.pictureBox1.Location = new System.Drawing.Point(130, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(210, 190);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.IndianRed;
+            this.label3.Location = new System.Drawing.Point(368, 82);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(233, 37);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Mom and Pops";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.IndianRed;
+            this.label4.Location = new System.Drawing.Point(368, 129);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 37);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Pizza";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -110,9 +139,9 @@
             this.Controls.Add(this.loginPanel);
             this.Name = "Login";
             this.Text = "Pizza";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.loginPanel.ResumeLayout(false);
             this.loginPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -126,5 +155,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button lbutton;
         private System.Windows.Forms.Panel loginPanel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
