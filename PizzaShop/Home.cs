@@ -17,7 +17,7 @@ namespace PizzaShop
 
         public Home()
         {
-
+            InitializeComponent();
         }
 
         private void homePanel_Paint(object sender, PaintEventArgs e)
@@ -27,9 +27,8 @@ namespace PizzaShop
 
         private void pizzab_Click(object sender, EventArgs e)
         {
-            Hide();
-            Size s = new Size();
-            s.Show();
+
+            
         }
 
         private void drinkb_Click(object sender, EventArgs e)

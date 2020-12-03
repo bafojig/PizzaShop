@@ -33,7 +33,8 @@ namespace PizzaShop
                 {
                     sw.WriteLine(Username);
                     sw.WriteLine(Password);
-                    sw.WriteLine(Address.ToString());
+
+                    //sw.WriteLine(Address.ToString());
                     sw.WriteLine(Pi);
                     sw.WriteLine(Admin);
                 }
@@ -53,7 +54,6 @@ namespace PizzaShop
         {
             private static int OrderNum;
             private static string date;
-            public static List<Item> items;
             private static double subtotal;
             private static double delFee;
             private static string signature;
@@ -64,7 +64,7 @@ namespace PizzaShop
             public static double Subtotal { get => subtotal; set => subtotal = value; }
             public static double DelFee { get => delFee; set => delFee = value; }
             public static string Signature { get => signature; set => signature = value; }
-            
+            public static List<Item> Items { get; set; }
 
             public static void findTotal()
             {

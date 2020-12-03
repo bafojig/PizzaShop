@@ -1,6 +1,6 @@
 ﻿namespace PizzaShop
 {
-    partial class Address
+    partial class Drinks
     {
         /// <summary>
         /// Required designer variable.

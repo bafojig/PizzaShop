@@ -18,7 +18,7 @@ namespace PizzaShop
             InitializeComponent();
         }
 
-        string user;
+
 
         private void lbutton_Click(object sender, EventArgs e)
         {

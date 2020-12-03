@@ -31,7 +31,7 @@
             this.cartPanel = new System.Windows.Forms.Panel();
             this.logoutb = new System.Windows.Forms.Button();
             this.homeb = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.cartList = new System.Windows.Forms.RichTextBox();
             this.cob = new System.Windows.Forms.Button();
             this.moreb = new System.Windows.Forms.Button();
             this.cartPanel.SuspendLayout();
@@ -41,7 +41,7 @@
             // 
             this.cartPanel.Controls.Add(this.logoutb);
             this.cartPanel.Controls.Add(this.homeb);
-            this.cartPanel.Controls.Add(this.richTextBox1);
+            this.cartPanel.Controls.Add(this.cartList);
             this.cartPanel.Controls.Add(this.cob);
             this.cartPanel.Controls.Add(this.moreb);
             this.cartPanel.Location = new System.Drawing.Point(12, 12);
@@ -57,6 +57,7 @@
             this.logoutb.TabIndex = 14;
             this.logoutb.Text = "Logout";
             this.logoutb.UseVisualStyleBackColor = true;
+            this.logoutb.Click += new System.EventHandler(this.logoutb_Click);
             // 
             // homeb
             // 
@@ -66,14 +67,15 @@
             this.homeb.TabIndex = 13;
             this.homeb.Text = "Home";
             this.homeb.UseVisualStyleBackColor = true;
+            this.homeb.Click += new System.EventHandler(this.homeb_Click);
             // 
-            // richTextBox1
+            // cartList
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(61, 105);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(231, 276);
-            this.richTextBox1.TabIndex = 12;
-            this.richTextBox1.Text = "Empty Cart";
+            this.cartList.Location = new System.Drawing.Point(61, 105);
+            this.cartList.Name = "cartList";
+            this.cartList.Size = new System.Drawing.Size(231, 276);
+            this.cartList.TabIndex = 12;
+            this.cartList.Text = "Empty Cart";
             // 
             // cob
             // 
@@ -83,6 +85,7 @@
             this.cob.TabIndex = 11;
             this.cob.Text = "Checkout";
             this.cob.UseVisualStyleBackColor = true;
+            this.cob.Click += new System.EventHandler(this.cob_Click);
             // 
             // moreb
             // 
@@ -92,6 +95,7 @@
             this.moreb.TabIndex = 10;
             this.moreb.Text = "Order More";
             this.moreb.UseVisualStyleBackColor = true;
+            this.moreb.Click += new System.EventHandler(this.moreb_Click);
             // 
             // Cart
             // 
@@ -111,7 +115,7 @@
         private System.Windows.Forms.Panel cartPanel;
         private System.Windows.Forms.Button logoutb;
         private System.Windows.Forms.Button homeb;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox cartList;
         private System.Windows.Forms.Button cob;
         private System.Windows.Forms.Button moreb;
     }

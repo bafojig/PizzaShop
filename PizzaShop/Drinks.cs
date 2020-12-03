@@ -10,10 +10,14 @@ using System.Windows.Forms;
 
 namespace PizzaShop
 {
-    public partial class Address : Form
+    public partial class Drinks : Form
     {
-        public Address()
+        public Drinks()
         {
+            string[] meats = { "Pepperoni", "Bacon", "Anchovies", "Ham" };
+            string[] veggies = { "Mushrooms", "Spinach", "Green Olives", "Pineapple" };
+
+            
             InitializeComponent();
         }
 

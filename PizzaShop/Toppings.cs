@@ -37,7 +37,7 @@ namespace PizzaShop
             }
 
             p.toppings = tops;
-            Program.Order.items.Add(p);
+            Program.Order.Items.Add(p);
             Hide();
             Cart c = new Cart();
             c.Show();
