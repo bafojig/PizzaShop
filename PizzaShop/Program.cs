@@ -22,6 +22,7 @@ namespace PizzaShop
             private static string[] address;
             private static PaymentInfo pi;
             private static bool admin;
+          
 
             public static string Username { get => username; set => username = value; }
             public static string Password { get => password; set => password = value; }
@@ -52,14 +53,17 @@ namespace PizzaShop
             {
 
             }
+
+           
         }
 
-        public class Order
+        public static class Order
         {
             private static int OrderNum;
             private static double subtotal;
             private static double delFee;
             private static string signature;
+            private static double price;
 
             public static int OrderNum1 { get => OrderNum; set => OrderNum = value; }
             public static string Date { get; set; }
@@ -68,13 +72,30 @@ namespace PizzaShop
             public static double DelFee { get => delFee; set => delFee = value; }
             public static string Signature { get => signature; set => signature = value; }
             public static List<Item> Items { get; set; }
+            public static double Price { get => price; set => price = value; }
 
-            public static void findTotal()
+            public static double getTotal()
             {
+                string s = "";
+                double d = 0;
+                double t;
+                if (Order.Items != null)
+                {
+                    foreach (Item i in Program.Order.Items)
+                    {
 
+                        d = d + i.price;
+                    }
+                    t = d + (d * .07);
+
+
+
+                    return t;
+                }
+                else return t = 0;
             }
 
-            public static void placeOrder()
+                public static void placeOrder()
             {
 
             }

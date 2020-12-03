@@ -66,6 +66,8 @@ namespace PizzaShop
                 System.Windows.Forms.MessageBox.Show("State is null");
             }
             string delcar = DelcarGroupBox.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+
+
         }
     }
 }

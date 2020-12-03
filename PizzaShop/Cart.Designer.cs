@@ -71,9 +71,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(61, 105);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(231, 276);
+            this.richTextBox1.Size = new System.Drawing.Size(516, 407);
             this.richTextBox1.TabIndex = 12;
             this.richTextBox1.Text = "Empty Cart";
             // 
@@ -85,7 +85,6 @@
             this.cob.TabIndex = 11;
             this.cob.Text = "Checkout";
             this.cob.UseVisualStyleBackColor = true;
-            //this.cob.Click += new System.EventHandler(this.cob_Click);
             // 
             // moreb
             // 

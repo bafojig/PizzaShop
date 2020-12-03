@@ -2,12 +2,12 @@
 {
     public class PaymentInfo
     {
-        bool credit;
-        string cardNum;
-        string expDate;
-        string zip;
-        string secCode;
-        
+        public string method;
+        public string cardNum;
+        public string expDate;
+        public string zip;
+        public string secCode;
+
         public bool checkValidity()
         {
             return true;

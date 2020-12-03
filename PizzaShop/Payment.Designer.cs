@@ -258,6 +258,7 @@
             // 
             this.totalBox.Location = new System.Drawing.Point(535, 169);
             this.totalBox.Name = "totalBox";
+            this.totalBox.ReadOnly = true;
             this.totalBox.Size = new System.Drawing.Size(165, 20);
             this.totalBox.TabIndex = 34;
             // 

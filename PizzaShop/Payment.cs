@@ -15,9 +15,10 @@ namespace PizzaShop
         public Payment()
         {
             InitializeComponent();
+            totalBox.Text = "" + Program.Order.getTotal();
         }
 
-        //put order total in totalBox
+        
 
         private void homeb_Click(object sender, EventArgs e)
         {
@@ -46,6 +47,7 @@ namespace PizzaShop
         private void placeOrderButton_Click(object sender, EventArgs e)
         {
             //place the order and show receipt, pass payment info to user to be saved
+
             if (ccBox.Text == "")
             {
                 System.Windows.Forms.MessageBox.Show("Card Number is null");
@@ -66,7 +68,32 @@ namespace PizzaShop
             {
                 System.Windows.Forms.MessageBox.Show("Security Code is null");
             }
+
+            PaymentInfo pi = new PaymentInfo();
+            
+            pi.cardNum = ccBox.Text;
+            pi.expDate = monthBox.Text + "/" + yearBox.Text;
+            pi.zip = ZipCodeBox.Text;
+            pi.secCode = SecurityCode.Text;
+
+            if (checkButton.Checked)
+                pi.method = "Check";
+            else if (ccButton.Checked)
+                pi.method = "Credit Card";
+            else
+                pi.method = "Debit Card";
+
+            Program.User.Pi = pi;
+
+            Program.User.saveInfo();
+
+            
             string payment = PaymentGroup.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+
+            Hide();
+            Receipt re = new Receipt();
+            re.Show();
+
         }
     }
 }

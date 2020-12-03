@@ -61,9 +61,10 @@ namespace PizzaShop
                 toppings = toppings + ", " + s;
             }
 
-            name = pizza.size + pizza.crust + " with " + pizza.cheese + " with " + toppings;
+            name = pizza.size + " " + pizza.crust + " pizza with " + pizza.cheese + "\n" + "Toppings: " + toppings;
 
             pizza.name = name;
+            
             
             List<Item> i = new List<Item>();
 

@@ -40,10 +40,10 @@
             // 
             // rcptBox
             // 
-            this.rcptBox.Location = new System.Drawing.Point(46, 12);
+            this.rcptBox.Location = new System.Drawing.Point(35, 64);
             this.rcptBox.Name = "rcptBox";
             this.rcptBox.ReadOnly = true;
-            this.rcptBox.Size = new System.Drawing.Size(231, 276);
+            this.rcptBox.Size = new System.Drawing.Size(668, 359);
             this.rcptBox.TabIndex = 3;
             this.rcptBox.Text = "Empty Cart";
             // 
