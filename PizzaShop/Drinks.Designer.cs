@@ -42,15 +42,18 @@
             this.backbutton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.addCart = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.drinksPanel.SuspendLayout();
             this.drinkBox.SuspendLayout();
             this.SizeOptionGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // drinksPanel
             // 
+            this.drinksPanel.Controls.Add(this.pictureBox2);
             this.drinksPanel.Controls.Add(this.pictureBox1);
             this.drinksPanel.Controls.Add(this.drinkBox);
             this.drinksPanel.Controls.Add(this.SizeOptionGroup);
@@ -201,6 +204,16 @@
             this.addCart.UseVisualStyleBackColor = true;
             this.addCart.Click += new System.EventHandler(this.addCart_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PizzaShop.Properties.Resources.clipart333375;
+            this.pictureBox2.Location = new System.Drawing.Point(380, 23);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(226, 138);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(226, 33);
@@ -223,6 +236,7 @@
             this.drinkBox.PerformLayout();
             this.SizeOptionGroup.ResumeLayout(false);
             this.SizeOptionGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -245,5 +259,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

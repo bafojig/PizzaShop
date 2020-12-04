@@ -37,10 +37,14 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.editb = new System.Windows.Forms.Button();
             this.homePanel = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.homePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pizzab
@@ -119,6 +123,8 @@
             // 
             // homePanel
             // 
+            this.homePanel.Controls.Add(this.pictureBox5);
+            this.homePanel.Controls.Add(this.pictureBox4);
             this.homePanel.Controls.Add(this.editb);
             this.homePanel.Controls.Add(this.pictureBox3);
             this.homePanel.Controls.Add(this.logoutb);
@@ -132,6 +138,26 @@
             this.homePanel.Size = new System.Drawing.Size(750, 426);
             this.homePanel.TabIndex = 10;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::PizzaShop.Properties.Resources.pizza_art;
+            this.pictureBox4.Location = new System.Drawing.Point(109, 207);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(174, 109);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 11;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::PizzaShop.Properties.Resources.clipart333375;
+            this.pictureBox5.Location = new System.Drawing.Point(461, 187);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(195, 133);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 17;
+            this.pictureBox5.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,6 +170,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.homePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -159,5 +187,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button editb;
         private System.Windows.Forms.Panel homePanel;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

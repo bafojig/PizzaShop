@@ -31,12 +31,12 @@
             this.sizePanel = new System.Windows.Forms.Panel();
             this.backBtn = new System.Windows.Forms.Button();
             this.nextBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Cheesebox = new System.Windows.Forms.GroupBox();
             this.reducedb = new System.Windows.Forms.RadioButton();
             this.normalb = new System.Windows.Forms.RadioButton();
             this.extrab = new System.Windows.Forms.RadioButton();
             this.Sizebox = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.smallb = new System.Windows.Forms.RadioButton();
             this.medb = new System.Windows.Forms.RadioButton();
             this.largeb = new System.Windows.Forms.RadioButton();
@@ -44,19 +44,19 @@
             this.htb = new System.Windows.Forms.RadioButton();
             this.tcb = new System.Windows.Forms.RadioButton();
             this.nysb = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sizePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Cheesebox.SuspendLayout();
             this.Sizebox.SuspendLayout();
             this.Crustbox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sizePanel
             // 
+            this.sizePanel.Controls.Add(this.pictureBox1);
             this.sizePanel.Controls.Add(this.backBtn);
             this.sizePanel.Controls.Add(this.nextBtn);
-            this.sizePanel.Controls.Add(this.pictureBox1);
             this.sizePanel.Controls.Add(this.Cheesebox);
             this.sizePanel.Controls.Add(this.Sizebox);
             this.sizePanel.Controls.Add(this.Crustbox);
@@ -84,14 +84,6 @@
             this.nextBtn.Text = "Toppings";
             this.nextBtn.UseVisualStyleBackColor = true;
             this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(335, 73);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
             // 
             // Cheesebox
             // 
@@ -150,6 +142,17 @@
             this.Sizebox.TabIndex = 14;
             this.Sizebox.TabStop = false;
             this.Sizebox.Text = "Size";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(39, 90);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(79, 17);
+            this.radioButton1.TabIndex = 6;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Extra Large";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // smallb
             // 
@@ -229,16 +232,15 @@
             this.nysb.Text = "New York Style";
             this.nysb.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // pictureBox1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(39, 90);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(79, 17);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Extra Large";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = global::PizzaShop.Properties.Resources.pizza_art;
+            this.pictureBox1.Location = new System.Drawing.Point(244, 46);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(237, 141);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
             // 
             // Size
             // 
@@ -249,13 +251,13 @@
             this.Name = "Size";
             this.Text = "Pizza";
             this.sizePanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Cheesebox.ResumeLayout(false);
             this.Cheesebox.PerformLayout();
             this.Sizebox.ResumeLayout(false);
             this.Sizebox.PerformLayout();
             this.Crustbox.ResumeLayout(false);
             this.Crustbox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -263,7 +265,6 @@
         #endregion
 
         private System.Windows.Forms.Panel sizePanel;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox Cheesebox;
         private System.Windows.Forms.RadioButton reducedb;
         private System.Windows.Forms.RadioButton normalb;
@@ -279,5 +280,6 @@
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Button nextBtn;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
